@@ -7,7 +7,6 @@ import Project2 from '@/public/images/project/projek2.png'
 import Project3 from '@/public/images/project/projek3.png'
 import Image from 'next/image'
 
-// Contoh data project
 const projects = [
   {
     id: 1,
@@ -29,6 +28,15 @@ const projects = [
   },
   {
     id: 3,
+    name: 'Website Card Monument',
+    description: 'I created a website to introduce the history of Bondowoso, East Java, focusing on the Gerbong Maut incident during Dutch colonization.',
+    image: Project3,
+    languages: ['html', 'css', 'javascript'],
+    link: 'https://web-app-posyandu.vercel.app/',
+    year: 2024
+  },
+  {
+    id: 4,
     name: 'Website Card Monument',
     description: 'I created a website to introduce the history of Bondowoso, East Java, focusing on the Gerbong Maut incident during Dutch colonization.',
     image: Project3,

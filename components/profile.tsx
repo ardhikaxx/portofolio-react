@@ -4,7 +4,7 @@ import '@fortawesome/fontawesome-free/css/all.css';
 
 export default function Profile() {
   return (
-    <section className="relative py-10">
+    <section className="relative py-5 z-10">
 
       {/* Illustration behind content */}
       <div className="absolute left-1/2 transform -translate-x-1/2 bottom-0 pointer-events-none -mb-32" aria-hidden="true">
@@ -26,8 +26,8 @@ export default function Profile() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="py-12 md:py-20">
 
-          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h2 className="h4 mb-4">Programming Languages and Frameworks I use</h2>
+          <div className=" mx-auto text-center pb-12 md:pb-16">
+            <h2 className="h3 mb-4">Programming Languages and Frameworks I use</h2>
             <p className=" text-gray-600" data-aos="zoom-y-out">I am very familiar with the framework and am learning more about it.</p>
           </div>
 
