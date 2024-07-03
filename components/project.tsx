@@ -34,15 +34,6 @@ const projects = [
     languages: ['html', 'css', 'javascript'],
     link: 'https://web-app-posyandu.vercel.app/',
     year: 2024
-  },
-  {
-    id: 4,
-    name: 'Website Card Monument',
-    description: 'I created a website to introduce the history of Bondowoso, East Java, focusing on the Gerbong Maut incident during Dutch colonization.',
-    image: Project3,
-    languages: ['html', 'css', 'javascript'],
-    link: 'https://web-app-posyandu.vercel.app/',
-    year: 2024
   }
 ]
 
