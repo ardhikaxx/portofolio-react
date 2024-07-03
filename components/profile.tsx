@@ -1,6 +1,11 @@
-import Image from 'next/image'
+import Image from 'next/image';
+import Icon from '@mdi/react';
 import ProfilImage from '@/public/images/me.jpg'
 import '@fortawesome/fontawesome-free/css/all.css';
+import { mdiMicrosoftVisualStudioCode } from '@mdi/js';
+import { mdiAndroidStudio } from '@mdi/js';
+import { mdiPowershell } from '@mdi/js';
+import { mdiMicrosoftVisualStudio } from '@mdi/js';
 
 export default function Profile() {
   return (
@@ -27,42 +32,38 @@ export default function Profile() {
         <div className="py-12 md:py-20">
 
           <div className=" mx-auto text-center pb-12 md:pb-16">
-            <h2 className="h3 mb-4">Programming Languages and Frameworks I use</h2>
-            <p className=" text-gray-600" data-aos="zoom-y-out">I am very familiar with the framework and am learning more about it.</p>
+            <h2 className="h3 mb-4">Apps I use daily</h2>
+            <p className=" text-gray-600" data-aos="zoom-y-out">Applications that I use when deploying or designing a project</p>
           </div>
 
           <div className="max-w-sm md:max-w-1xl mx-auto grid gap-1 grid-cols-4 md:grid-cols-5">
             <div className="flex items-center justify-center py-2 col-span-1 md:col-auto">
-              <i className="fab fa-html5 text-gray-400 text-5xl"></i>
+              <Icon className='text-gray-400' path={mdiMicrosoftVisualStudioCode} size={2.5} />
             </div>
             <div className="flex items-center justify-center py-2 col-span-1 md:col-auto">
-              <i className="fab fa-css3 text-gray-400 text-5xl"></i>
+              <Icon className='text-gray-400' path={mdiMicrosoftVisualStudio} size={2.5} />
             </div>
             <div className="flex items-center justify-center py-2 col-span-1 md:col-auto">
-              <i className="fab fa-bootstrap text-gray-400 text-5xl"></i>
+              <Icon className='text-gray-400' path={mdiPowershell} size={2} />
             </div>
             <div className="flex items-center justify-center py-2 col-span-1 md:col-auto">
-              <i className="fab fa-js-square text-gray-400 text-5xl"></i>
+              <Icon className='text-gray-400' path={mdiAndroidStudio} size={2} />
             </div>
             <div className="flex items-center justify-center py-2 col-span-1 md:col-auto">
-              <i className="fab fa-react text-gray-400 text-5xl"></i>
+              <i className="fab fa-figma text-gray-400 text-5xl"></i>
             </div>
             <div className="flex items-center justify-center py-2 col-span-1 md:col-auto">
-              <i className="fab fa-angular text-gray-400 text-5xl"></i>
+              <i className="fab fa-github text-gray-400 text-5xl"></i>
             </div>
             <div className="flex items-center justify-center py-2 col-span-1 md:col-auto">
-              <i className="fab fa-vuejs text-gray-400 text-5xl"></i>
+              <i className="fab fa-git text-gray-400 text-5xl"></i>
             </div>
             <div className="flex items-center justify-center py-2 col-span-1 md:col-auto">
-              <i className="fab fa-node-js text-gray-400 text-5xl"></i>
+              <i className="fab fa-node text-gray-400 text-5xl"></i>
             </div>
             <div className="flex items-center justify-center py-2 col-span-1 md:col-auto">
-              <i className="fab fa-php text-gray-400 text-5xl"></i>
+              <i className="fab fa-trello text-gray-400 text-5xl"></i>
             </div>
-            <div className="flex items-center justify-center py-2 col-span-1 md:col-auto">
-              <i className="fab fa-laravel text-gray-400 text-5xl"></i>
-            </div>
-
           </div>
 
           <div className="max-w-3xl mx-auto mt-12 pt-20" data-aos="zoom-y-out">
