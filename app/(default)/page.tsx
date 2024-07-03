@@ -1,0 +1,20 @@
+export const metadata = {
+  title: 'Home - Simple',
+  description: 'Page description',
+}
+
+import Hero from '@/components/hero'
+import Skill from '@/components/skill'
+import Project from '@/components/project'
+import Profile from '@/components/profile'
+
+export default function Home() {
+  return (
+    <>
+      <Hero />
+      <Profile/>
+      <Project/>
+      <Skill/>
+    </>
+  )
+}
