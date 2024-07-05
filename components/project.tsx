@@ -32,7 +32,7 @@ const projects = [
     name: 'Mobile-based Posyandu Health Data Manager',
     description: 'I developed a mobile app for parents to manage toddler posyandu health data for the final project of even semester 2024. Our team passed funding from the "Program Kreativitas Mahasiswa" (PKM).',
     image: Project4,
-    languages: [ 'android-studio' ,'dart', 'flutter'],
+    languages: ['android-studio', 'dart', 'flutter'],
     link: 'https://youtu.be/ouWihtoRrXQ?si=i9-c8RCqJMOmwfLo',
     year: 2024
   },
@@ -49,49 +49,49 @@ const projects = [
 
 const icons: any = {
   html: (
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="35" height="35" alt="html5 logo" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="25" height="25" alt="html5 logo" />
   ),
   css: (
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="35" height="35" alt="css3 logo" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="25" height="25" alt="css3 logo" />
   ),
   bootstrap: (
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" width="35" height="35" alt="bootstrap logo" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" width="25" height="25" alt="bootstrap logo" />
   ),
   tailwind: (
-    <img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" width="35" height="35" alt="tailwindcss logo" />
+    <img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" width="25" height="25" alt="tailwindcss logo" />
   ),
   laravel: (
-    <img src="https://cdn.simpleicons.org/laravel/FF2D20" width="35" height="35" alt="laravel logo" />
+    <img src="https://cdn.simpleicons.org/laravel/FF2D20" width="25" height="25" alt="laravel logo" />
   ),
   javascript: (
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="35" height="35" alt="javascript logo" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="25" height="25" alt="javascript logo" />
   ),
   php: (
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" width="35" height="35" alt="php logo" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" width="25" height="25" alt="php logo" />
   ),
   'react': (
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="35" height="35" alt="react logo" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="25" height="25" alt="react logo" />
   ),
   'vue.js': (
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" width="35" height="35" alt="vuejs logo" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" width="25" height="25" alt="vuejs logo" />
   ),
   'express.js': (
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" width="55" height="40" alt="express logo" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" width="25" height="25" alt="express logo" />
   ),
   'android-studio': (
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg" width="35" height="35" alt="androidstudio logo" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg" width="25" height="25" alt="androidstudio logo" />
   ),
   dart: (
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" width="35" height="35" alt="dart logo" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" width="25" height="25" alt="dart logo" />
   ),
   flutter: (
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" width="35" height="35" alt="flutter logo" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" width="25" height="25" alt="flutter logo" />
   ),
   'node.js': (
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="35" height="35" alt="nodejs logo" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="25" height="25" alt="nodejs logo" />
   ),
   'next.js': (
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" width="35" height="35" alt="nextjs logo" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" width="25" height="25" alt="nextjs logo" />
   )
 }
 
@@ -109,32 +109,37 @@ export default function Features() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8" data-aos="zoom-y-out" data-aos-delay="150">
           {projects.map(project => (
             <div key={project.id} className="bg-white shadow-lg rounded-xl overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-              <div className="relative overflow-hidden h-56">
-                <Image
-                  src={project.image}
-                  alt={project.name}
-                  className="transition-transform duration-500 hover:scale-110"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-gray-800 mb-1">{project.name}</h3>
-                <p className="text-gray-500 text-sm mb-2">{project.year}</p>
-                <p className="text-gray-600 mb-4">{project.description}</p>
-                <div className="flex space-x-2 mb-4">
-                  {project.languages.map((lang, index) => (
-                    <div key={index}>{icons[lang]}</div>
-                  ))}
-                </div>
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block px-4 py-2 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition duration-300"
-                >
-                  View Project
-                </a>
+            <div className="relative overflow-hidden h-56">
+              <Image
+                src={project.image}
+                alt={project.name}
+                className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70 transition-opacity duration-300 hover:opacity-50"></div>
+              <div className="absolute bottom-4 left-4 text-white">
+                <h3 className="text-2xl font-semibold">{project.name}</h3>
+                <p className="text-sm">{project.year}</p>
               </div>
             </div>
+            <div className="p-6">
+              <p className="text-gray-600 mb-4">{project.description}</p>
+              <div className="flex flex-wrap space-x-2 mb-4">
+                {project.languages.map((lang, index) => (
+                  <div key={index} className="flex items-center bg-gray-100 rounded-full p-3 shadow-md">
+                    {icons[lang]}
+                  </div>
+                ))}
+              </div>
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-5 py-2 bg-blue-500 text-white text-sm font-semibold rounded-full shadow-lg hover:bg-blue-600 transition duration-300"
+              >
+                View Project
+              </a>
+            </div>
+          </div>          
           ))}
         </div>
       </div>

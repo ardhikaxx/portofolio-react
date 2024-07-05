@@ -25,38 +25,48 @@ export default function Features() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8" data-aos="zoom-y-out" data-aos-delay="250">
             <div className="bg-white shadow-lg rounded-xl overflow-hidden">
               <div className="p-6">
-                <h2 className="text-xl font-bold text-gray-800 mb-5 text-center">Web Development</h2>
+                <h2 className="text-2xl font-bold text-gray-800 mb-5 text-center">Web Development</h2>
                 <div className="grid grid-cols-6 text-center items-center justify-center gap-3 mx-auto">
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="55" height="40" alt="html5 logo" />
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="55" height="40" alt="css3 logo" />
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" width="55" height="40" alt="bootstrap logo" />
-                  <img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" width="55" height="40" alt="tailwindcss logo" />
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="55" height="40" alt="javascript logo" />
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="55" height="40" alt="typescript logo" />
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="55" height="40" alt="react logo" />
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" width="55" height="40" alt="vuejs logo" />
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" width="55" height="40" alt="express logo" />
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" width="55" height="40" alt="nextjs logo" />
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="55" height="40" alt="nodejs logo" />
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" width="55" height="40" alt="php logo" />
-                  <img src="https://cdn.simpleicons.org/laravel/FF2D20" width="55" height="40" alt="laravel logo" />
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/composer/composer-original.svg" width="55" height="40" alt="composer logo" />
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg" width="55" height="40" alt="materialui logo" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="55" height="40" alt="HTML5 logo" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="55" height="40" alt="CSS3 logo" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" width="55" height="40" alt="Bootstrap logo" />
+                  <img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" width="55" height="40" alt="TailwindCSS logo" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="55" height="40" alt="JavaScript logo" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="55" height="40" alt="TypeScript logo" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="55" height="40" alt="React logo" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" width="55" height="40" alt="Vue.js logo" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" width="55" height="40" alt="Express logo" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" width="55" height="40" alt="Next.js logo" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="55" height="40" alt="Node.js logo" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" width="55" height="40" alt="PHP logo" />
+                  <img src="https://cdn.simpleicons.org/laravel/FF2D20" width="55" height="40" alt="Laravel logo" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/composer/composer-original.svg" width="55" height="40" alt="Composer logo" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg" width="55" height="40" alt="Material UI logo" />
                 </div>
-                <p className="text-center font-bold text-gray-600 mt-5">Level: Beginner</p>
+                <div className="flex justify-center items-center mt-5">
+                  <div className="bg-blue-100 text-blue-700 text-sm font-bold px-4 py-2 rounded-full">
+                    <span className="mr-2">Level:</span>
+                    <span className="bg-blue-200 text-blue-700 px-3 py-1 rounded-full">Beginner</span>
+                  </div>
+                </div>
               </div>
             </div>
-            <div className="bg-white shadow-lg rounded-xl flex justify-center overflow-hidden">
+            <div className="bg-white shadow-lg rounded-xl overflow-hidden">
               <div className="p-6">
-                <h2 className="text-xl font-bold text-gray-800 mb-5 text-center">Mobile Development</h2>
-                <div className=" grid-cols-6 flex justify-center py-16 gap-3 mx-auto">
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" width="55" alt="android logo" />
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg" width="55" height="40" alt="androidstudio logo" />
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" width="55" height="40" alt="kotlin logo" />
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" width="55" height="40" alt="dart logo" />
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" width="55" height="40" alt="flutter logo" />
+                <h2 className="text-2xl font-bold text-gray-800 mb-5 text-center">Mobile Development</h2>
+                <div className="flex justify-center items-center gap-3 py-16 mx-auto">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" width="55" alt="Android logo" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg" width="55" height="40" alt="Android Studio logo" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" width="55" height="40" alt="Kotlin logo" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" width="55" height="40" alt="Dart logo" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" width="55" height="40" alt="Flutter logo" />
                 </div>
-                <p className="text-center font-bold text-gray-600 mt-5">Level: Beginner</p>
+                <div className="flex justify-center items-center mt-5">
+                  <div className="bg-blue-100 text-blue-700 text-sm font-bold px-4 py-2 rounded-full">
+                    <span className="mr-2">Level:</span>
+                    <span className="bg-blue-200 text-blue-700 px-3 py-1 rounded-full">Beginner</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
