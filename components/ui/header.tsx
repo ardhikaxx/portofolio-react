@@ -9,7 +9,6 @@ export default function Header() {
 
   const [scrolled, setScrolled] = useState<boolean>(false)
 
-  // detect whether user has scrolled the page down by 10px
   const scrollHandler = () => {
     window.pageYOffset > 10 ? setScrolled(true) : setScrolled(false)
   }  

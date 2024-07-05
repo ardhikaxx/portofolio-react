@@ -29,6 +29,15 @@ const projects = [
   },
   {
     id: 3,
+    name: 'Mobile-based Posyandu Health Data Manager',
+    description: 'I developed a mobile app for parents to manage toddler posyandu health data for the final project of even semester 2024. Our team passed funding from the "Program Kreativitas Mahasiswa" (PKM).',
+    image: Project4,
+    languages: [ 'android-studio' ,'dart', 'flutter'],
+    link: 'https://youtu.be/ouWihtoRrXQ?si=i9-c8RCqJMOmwfLo',
+    year: 2024
+  },
+  {
+    id: 4,
     name: 'Website Card Monument',
     description: 'I created a website to introduce the history of Bondowoso, East Java, focusing on the Gerbong Maut incident during Dutch colonization.',
     image: Project3,
@@ -36,15 +45,6 @@ const projects = [
     link: 'https://web-app-posyandu.vercel.app/',
     year: 2024
   },
-  {
-    id: 4,
-    name: 'Mobile-based Posyandu Health Data Manager',
-    description: 'I developed a mobile app for parents to manage toddler posyandu health data for the final project of even semester 2024. Our team passed funding from the "Program Kreativitas Mahasiswa" (PKM).',
-    image: Project4,
-    languages: [ 'android-studio' ,'dart', 'flutter'],
-    link: 'https://web-app-posyandu.vercel.app/',
-    year: 2024
-  }
 ]
 
 const icons: any = {

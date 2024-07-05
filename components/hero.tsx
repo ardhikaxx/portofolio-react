@@ -1,6 +1,9 @@
 import Image from 'next/image';
 import LogoImage from '@/public/images/logo-simple.png';
+import { FlipWords } from "./ui/flip-words";
 export default function Hero() {
+  const words = ["Front-End", "Web", "Mobile"];
+
   return (
     <section className="relative overflow-hidden z-10">
       <div className="absolute left-1/2 transform -translate-x-1/2 bottom-0 pointer-events-none z-0" aria-hidden="true">
@@ -28,7 +31,12 @@ export default function Hero() {
               </h1>
             </div>
             <div className="max-w-3xl mx-auto">
-              <p className="text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150">I am a Junior Web & Mobile Dev committed to improving user experience by creating responsive, visually appealing, and functional interfaces across multiple devices and platforms.</p>
+              <div className="text-xl md:text-4xl text-gray-800 mb-2 flex justify-center items-center" data-aos="zoom-y-out" data-aos-delay="150">
+                <p className="text-neutral-600 font-bold">I'm a</p>
+                <FlipWords className='text-xl md:text-4xl text-neutral-600' words={words} />
+                <p className="text-neutral-600 font-bold"> Developer</p>
+              </div>
+              <p className="text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150">I 'm a Junior Web & Mobile Dev focused on responsive, attractive, and functional interfaces across multiple devices and platforms.</p>
               <div className="max-w-xl mx-auto sm:max-w-none flex items-center justify-center gap-5" data-aos="zoom-y-out" data-aos-delay="300">
                 <div>
                   <a className="btn text-white bg-blue-600 hover:bg-blue-700 py-3 px-4 sm:py-3 sm:px-6 text-xs sm:text-base" href="https://ardhika-portofolio.vercel.app/" target='_blank' rel="noopener noreferrer">About Me</a>

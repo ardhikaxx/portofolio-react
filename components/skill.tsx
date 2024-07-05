@@ -43,20 +43,20 @@ export default function Features() {
                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/composer/composer-original.svg" width="55" height="40" alt="composer logo" />
                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg" width="55" height="40" alt="materialui logo" />
                 </div>
-                <p className=" text-center font-bold text-gray-600 mt-5">Level: Beginner</p>
+                <p className="text-center font-bold text-gray-600 mt-5">Level: Beginner</p>
               </div>
             </div>
-            <div className="bg-white shadow-lg rounded-xl overflow-hidden">
+            <div className="bg-white shadow-lg rounded-xl flex justify-center overflow-hidden">
               <div className="p-6">
                 <h2 className="text-xl font-bold text-gray-800 mb-5 text-center">Mobile Development</h2>
-                <div className="grid grid-cols-6 items-center justify-center gap-3 mx-auto">
+                <div className=" grid-cols-6 flex justify-center py-16 gap-3 mx-auto">
                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" width="55" alt="android logo" />
                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg" width="55" height="40" alt="androidstudio logo" />
                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" width="55" height="40" alt="kotlin logo" />
                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" width="55" height="40" alt="dart logo" />
                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" width="55" height="40" alt="flutter logo" />
                 </div>
-                <p className="text-sm text-center text-bold text-gray-600 mt-5">Level: Beginner</p>
+                <p className="text-center font-bold text-gray-600 mt-5">Level: Beginner</p>
               </div>
             </div>
           </div>
