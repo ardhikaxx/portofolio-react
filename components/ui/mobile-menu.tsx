@@ -2,13 +2,31 @@
 
 import { useState, useRef, useEffect } from 'react'
 import { Transition } from '@headlessui/react'
-import Link from 'next/link'
+import Link from 'next/link';
+import Icon from '@mdi/react';
+import { mdiTrayArrowDown } from '@mdi/js';
 
 export default function MobileMenu() {
   const [mobileNavOpen, setMobileNavOpen] = useState<boolean>(false)
 
   const trigger = useRef<HTMLButtonElement>(null)
   const mobileNav = useRef<HTMLDivElement>(null)
+
+  const handleDownload = () => {
+    const downloadUrl = '/pdf/cv-kreatif.pdf';
+    fetch(downloadUrl)
+      .then(response => response.blob())
+      .then(blob => {
+        const url = window.URL.createObjectURL(new Blob([blob]));
+        const link = document.createElement('a');
+        link.href = url;
+        link.setAttribute('download', 'cv-kreatif.pdf');
+        document.body.appendChild(link);
+        link.click();
+        window.URL.revokeObjectURL(url);
+      })
+      .catch(error => console.error('Error downloading CV:', error));
+  };
 
   useEffect(() => {
     const clickHandler = ({ target }: { target: EventTarget | null }): void => {
@@ -20,7 +38,6 @@ export default function MobileMenu() {
     return () => document.removeEventListener('click', clickHandler)
   })
 
-  // close the mobile menu if the esc key is pressed
   useEffect(() => {
     const keyHandler = ({ keyCode }: { keyCode: number }): void => {
       if (!mobileNavOpen || keyCode !== 27) return;
@@ -62,15 +79,17 @@ export default function MobileMenu() {
         >
           <ul className="flex flex-col justify-center items-center px-2 py-2 ">
             <li>
-              <Link href="/signin" className="flex font-medium w-full text-gray-600 hover:text-gray-900 py-2 justify-center" onClick={() => setMobileNavOpen(false)}>Contact Me</Link>
+              <Link href="https://www.instagram.com/ardhkkaa_/" target='_blank' className="flex font-medium w-full text-gray-600 hover:text-gray-900 py-2 justify-center">Contact Me</Link>
             </li>
             <li>
-              <Link href="/signup" className="btn-sm text-gray-200 bg-gray-900 hover:bg-gray-800 py-3 px-5 my-2" onClick={() => setMobileNavOpen(false)}>
-                <span>My Portofolio</span>
-                <svg className="w-3 h-3 fill-current text-gray-400 shrink-0 ml-2 -mr-1" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M11.707 5.293L7 .586 5.586 2l3 3H0v2h8.586l-3 3L7 11.414l4.707-4.707a1 1 0 000-1.414z" fill="#999" fillRule="nonzero" />
-                </svg>
-              </Link>
+              <button onClick={() => setMobileNavOpen(false)}>
+              </button>
+            </li>
+            <li>
+              <button className="btn-sm text-gray-200 bg-gray-900 hover:bg-gray-800 py-3 px-5 my-2" onClick={handleDownload}>
+                Download CV
+                <Icon path={mdiTrayArrowDown} className='ml-2' size={1} />
+              </button>
             </li>
           </ul>
         </Transition>

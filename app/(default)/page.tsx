@@ -11,7 +11,7 @@ import Profile from '@/components/profile'
 export default function Home() {
   return (
     <>
-      <Hero />
+      <Hero/>
       <Profile/>
       <Project/>
       <Skill/>

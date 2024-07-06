@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import LogoImage from '@/public/images/logo-simple.png';
 import { FlipWords } from "./ui/flip-words";
+import React from 'react';
+import DownloadButton from './ui/DownloadButton';
 
 export default function Hero() {
   const words = ["Front-End", "Web", "Mobile"];
@@ -37,13 +39,13 @@ export default function Hero() {
                 <FlipWords className='text-xl md:text-4xl text-neutral-600' words={words} />
                 <p className="text-neutral-600 font-bold"> Developer</p>
               </div>
-              <p className="text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150">I 'm a Junior Web & Mobile Dev focused on responsive, attractive, and functional interfaces across multiple devices and platforms.</p>
+              <p className="text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150">I'm a Junior Web & Mobile Dev focused on responsive, attractive, and functional interfaces across multiple devices and platforms.</p>
               <div className="max-w-xl mx-auto sm:max-w-none flex items-center justify-center gap-5" data-aos="zoom-y-out" data-aos-delay="300">
+                {/* <div>
+                  <Link className="btn text-white bg-blue-600 hover:bg-blue-700 py-3 px-4 sm:py-3 sm:px-6 text-xs sm:text-base" href="y">About Me</Link>
+                </div> */}
                 <div>
-                  <a className="btn text-white bg-blue-600 hover:bg-blue-700 py-3 px-4 sm:py-3 sm:px-6 text-xs sm:text-base" href="https://ardhika-portofolio.vercel.app/" target='_blank' rel="noopener noreferrer">About Me</a>
-                </div>
-                <div>
-                  <a className="btn text-white bg-gray-900 hover:bg-gray-800 py-3 px-4 sm:py-3 sm:px-6 text-xs sm:text-base" href="https://ardhika-portofolio.vercel.app/html/more.html" target='_blank' rel="noopener noreferrer">Download CV</a>
+                  <DownloadButton />
                 </div>
               </div>
             </div>

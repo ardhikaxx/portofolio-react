@@ -1,6 +1,6 @@
 'use client'
 import { useState, useRef, useEffect } from 'react'
-export default function Features() {
+export default function Skill() {
   const [tab, setTab] = useState<number>(1)
   const tabs = useRef<HTMLDivElement>(null)
 

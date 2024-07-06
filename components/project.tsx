@@ -95,7 +95,7 @@ const icons: any = {
   )
 }
 
-export default function Features() {
+export default function Project() {
 
   const [tab, setTab] = useState<number>(1)
 
