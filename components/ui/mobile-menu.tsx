@@ -23,6 +23,7 @@ export default function MobileMenu() {
         link.setAttribute('download', 'cv-kreatif.pdf');
         document.body.appendChild(link);
         link.click();
+        document.body.removeChild(link);
         window.URL.revokeObjectURL(url);
       })
       .catch(error => console.error('Error downloading CV:', error));
