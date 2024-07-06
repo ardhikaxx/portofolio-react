@@ -7,6 +7,8 @@ import { mdiAndroidStudio } from '@mdi/js';
 import { mdiPowershell } from '@mdi/js';
 import { mdiMicrosoftVisualStudio } from '@mdi/js';
 import { FaMapMarkerAlt, FaPhone, FaEnvelope } from 'react-icons/fa';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faInstagram, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 export default function Profile() {
   return (
@@ -79,6 +81,29 @@ export default function Profile() {
                 <cite className="block font-bold text-xl not-italic mb-1 text-gray-900">Yanuar Ardhika Rahmadhani Ubaidillah</cite>
                 <div className="text-gray-600 text-lg">
                   <span>Junior Web & Mobile Developer</span>
+                </div>
+                <div className="flex justify-center mt-6 space-x-6">
+                  <a
+                    href="https://www.instagram.com/ardhkkaa_/"
+                    target="_blank"
+                    className="text-gray-500 hover:text-gray-900 transition-transform transform hover:scale-110"
+                  >
+                    <FontAwesomeIcon icon={faInstagram} size="2x" />
+                  </a>
+                  <a
+                    href="https://github.com/ardhikaxx"
+                    target="_blank"
+                    className="text-gray-500 hover:text-gray-900 transition-transform transform hover:scale-110"
+                  >
+                    <FontAwesomeIcon icon={faGithub} size="2x" />
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/yanuar-ardhika-rahmadhani-ubaidillah-36a842287/"
+                    target="_blank"
+                    className="text-gray-500 hover:text-gray-900 transition-transform transform hover:scale-110"
+                  >
+                    <FontAwesomeIcon icon={faLinkedin} size="2x" />
+                  </a>
                 </div>
               </div>
             </div>
