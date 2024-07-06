@@ -1,8 +1,6 @@
 'use client';
 
 import React from 'react';
-import Icon from '@mdi/react';
-import { mdiTrayArrowDown } from '@mdi/js';
 
 const DownloadButton: React.FC = () => {
     const handleDownload = () => {
@@ -16,6 +14,7 @@ const DownloadButton: React.FC = () => {
                 link.setAttribute('download', 'cv-kreatif.pdf');
                 document.body.appendChild(link);
                 link.click();
+                document.body.removeChild(link);
                 window.URL.revokeObjectURL(url);
             })
             .catch(error => console.error('Error downloading CV:', error));
@@ -28,7 +27,6 @@ const DownloadButton: React.FC = () => {
             rel="noopener noreferrer"
         >
             Download CV
-            <Icon path={mdiTrayArrowDown} className='ml-2' size={1} />
         </button>
     );
 };
