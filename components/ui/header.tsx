@@ -50,7 +50,13 @@ export default function Header() {
                 <Link href="https://www.instagram.com/ardhkkaa_/" target='_blank' className={`font-medium ${scrolled ? 'text-black hover:text-gray-700' : 'text-black'} hover:text-gray-700 px-5 py-3 flex items-center transition duration-150 ease-in-out`}>Contact Me</Link>
               </li>
               <li>
-                <button onClick={handleDownload} className={`btn-sm ${scrolled ? 'bg-blue-600 hover:bg-blue-700' : 'bg-gray-800 hover:bg-gray-700'} text-white ml-3`}>
+                <button
+                  onClick={handleDownload}
+                  className={`btn-sm btn px-3 rounded-full ${scrolled
+                      ? 'bg-gradient-to-r from-[#4895D1] to-[#78B1E5]'
+                      : 'bg-gray-800 hover:bg-gray-700'
+                    } text-white ml-3 transition-colors duration-300`}
+                >
                   <span>Download CV</span>
                   <Icon path={mdiTrayArrowDown} className='ml-2' size={1} />
                 </button>

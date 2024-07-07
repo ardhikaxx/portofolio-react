@@ -22,7 +22,7 @@ const DownloadButton: React.FC = () => {
 
     return (
         <button
-            className="btn text-white bg-gray-900 hover:bg-gray-800 py-3 px-4 sm:py-3 sm:px-6 text-xs sm:text-base"
+            className="bg-gradient-to-r from-[#4895D1] to-[#78B1E5] text-white font-semibold py-3 px-6 rounded-full shadow-md transition duration-300 ease-in-out transform hover:scale-105"
             onClick={handleDownload}
             rel="noopener noreferrer"
         >
