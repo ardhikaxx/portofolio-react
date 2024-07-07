@@ -1,8 +1,10 @@
 'use client';
 
 import React from 'react';
+import { toast } from 'react-toastify';
 
 const DownloadButton: React.FC = () => {
+
     const handleDownload = () => {
         const downloadUrl = '/pdf/cv-kreatif.pdf';
         fetch(downloadUrl)
@@ -16,8 +18,29 @@ const DownloadButton: React.FC = () => {
                 link.click();
                 document.body.removeChild(link);
                 window.URL.revokeObjectURL(url);
+
+                toast.success('Download Successful! Your download has completed.', {
+                    position: "top-right",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                });
             })
-            .catch(error => console.error('Error downloading CV:', error));
+            .catch(error => {
+                console.error('Error during download:', error);
+                toast.error('Download Failed! There was an error downloading the file.', {
+                    position: "top-right",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                });
+            });
     };
 
     return (

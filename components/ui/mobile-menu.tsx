@@ -5,6 +5,7 @@ import { Transition } from '@headlessui/react'
 import Link from 'next/link';
 import Icon from '@mdi/react';
 import { mdiTrayArrowDown } from '@mdi/js';
+import { toast } from 'react-toastify';
 
 export default function MobileMenu() {
   const [mobileNavOpen, setMobileNavOpen] = useState<boolean>(false)
@@ -25,8 +26,29 @@ export default function MobileMenu() {
         link.click();
         document.body.removeChild(link);
         window.URL.revokeObjectURL(url);
+
+        toast.success('Download Successful! Your download has completed.', {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
       })
-      .catch(error => console.error('Error downloading CV:', error));
+      .catch(error => {
+        console.error('Error during download:', error);
+        toast.error('Download Failed! There was an error downloading the file.', {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
+      });
   };
 
   useEffect(() => {

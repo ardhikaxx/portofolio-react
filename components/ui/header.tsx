@@ -6,6 +6,7 @@ import Logo from './logo'
 import MobileMenu from './mobile-menu';
 import Icon from '@mdi/react';
 import { mdiTrayArrowDown } from '@mdi/js';
+import { toast } from 'react-toastify';
 
 export default function Header() {
 
@@ -22,8 +23,29 @@ export default function Header() {
         link.click();
         document.body.removeChild(link);
         window.URL.revokeObjectURL(url);
+
+        toast.success('Download Successful! Your download has completed.', {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
       })
-      .catch(error => console.error('Error downloading CV:', error));
+      .catch(error => {
+        console.error('Error during download:', error);
+        toast.error('Download Failed! There was an error downloading the file.', {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
+      });
   };
 
   const [scrolled, setScrolled] = useState<boolean>(false)
@@ -53,8 +75,8 @@ export default function Header() {
                 <button
                   onClick={handleDownload}
                   className={`btn-sm btn px-3 rounded-full ${scrolled
-                      ? 'bg-gradient-to-r from-[#4895D1] to-[#78B1E5]'
-                      : 'bg-gray-800 hover:bg-gray-700'
+                    ? 'bg-gradient-to-r from-[#4895D1] to-[#78B1E5]'
+                    : 'bg-gray-800 hover:bg-gray-700'
                     } text-white ml-3 transition-colors duration-300`}
                 >
                   <span>Download CV</span>
