@@ -6,8 +6,11 @@ import Link from 'next/link';
 import Icon from '@mdi/react';
 import { mdiTrayArrowDown } from '@mdi/js';
 import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 export default function MobileMenu() {
+
   const [mobileNavOpen, setMobileNavOpen] = useState<boolean>(false)
 
   const trigger = useRef<HTMLButtonElement>(null)
@@ -27,7 +30,7 @@ export default function MobileMenu() {
         document.body.removeChild(link);
         window.URL.revokeObjectURL(url);
 
-        toast.success('Download Successful! Your download has completed.', {
+        toast.success('Download Successful!', {
           position: "top-right",
           autoClose: 5000,
           hideProgressBar: false,
@@ -35,12 +38,13 @@ export default function MobileMenu() {
           pauseOnHover: true,
           draggable: true,
           progress: undefined,
+          style: { width: '300px', marginLeft: 'auto'},
         });
       })
       .catch(error => {
         console.error('Error during download:', error);
         toast.error('Download Failed! There was an error downloading the file.', {
-          position: "top-right",
+          position: "top-center",
           autoClose: 5000,
           hideProgressBar: false,
           closeOnClick: true,

@@ -2,6 +2,8 @@
 
 import React from 'react';
 import { toast } from 'react-toastify';
+import Icon from '@mdi/react';
+import { mdiTrayArrowDown } from '@mdi/js';
 
 const DownloadButton: React.FC = () => {
 
@@ -19,7 +21,7 @@ const DownloadButton: React.FC = () => {
                 document.body.removeChild(link);
                 window.URL.revokeObjectURL(url);
 
-                toast.success('Download Successful! Your download has completed.', {
+                toast.success('Download Successful!', {
                     position: "top-right",
                     autoClose: 5000,
                     hideProgressBar: false,
@@ -27,12 +29,13 @@ const DownloadButton: React.FC = () => {
                     pauseOnHover: true,
                     draggable: true,
                     progress: undefined,
+                    style: { width: '300px', marginLeft: 'auto'},
                 });
             })
             .catch(error => {
                 console.error('Error during download:', error);
                 toast.error('Download Failed! There was an error downloading the file.', {
-                    position: "top-right",
+                    position: "top-center",
                     autoClose: 5000,
                     hideProgressBar: false,
                     closeOnClick: true,
@@ -45,11 +48,12 @@ const DownloadButton: React.FC = () => {
 
     return (
         <button
-            className="bg-gradient-to-r from-[#4895D1] to-[#78B1E5] text-white font-semibold py-3 px-6 rounded-full shadow-md transition duration-300 ease-in-out transform hover:scale-105"
+            className="bg-gradient-to-r from-[#4895D1] to-[#78B1E5] text-white font-semibold py-3 px-6 rounded-full shadow-md flex items-center gap-2 transition duration-300 ease-in-out transform hover:scale-105"
             onClick={handleDownload}
             rel="noopener noreferrer"
         >
             Download CV
+            <Icon path={mdiTrayArrowDown} className='ml-2' size={1} />
         </button>
     );
 };

@@ -24,7 +24,7 @@ export default function Header() {
         document.body.removeChild(link);
         window.URL.revokeObjectURL(url);
 
-        toast.success('Download Successful! Your download has completed.', {
+        toast.success('Download Successful!', {
           position: "top-right",
           autoClose: 5000,
           hideProgressBar: false,
@@ -32,12 +32,13 @@ export default function Header() {
           pauseOnHover: true,
           draggable: true,
           progress: undefined,
+          style: { width: '300px', marginLeft: 'auto'},
         });
       })
       .catch(error => {
         console.error('Error during download:', error);
         toast.error('Download Failed! There was an error downloading the file.', {
-          position: "top-right",
+          position: "top-center",
           autoClose: 5000,
           hideProgressBar: false,
           closeOnClick: true,
