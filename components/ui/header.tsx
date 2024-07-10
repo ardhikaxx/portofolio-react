@@ -70,7 +70,7 @@ export default function Header() {
           <nav className="hidden md:flex md:grow">
             <ul className="flex grow justify-end flex-wrap items-center">
               <li>
-                <Link href="https://www.instagram.com/ardhkkaa_/" target='_blank' className={`font-medium ${scrolled ? 'text-black hover:text-gray-700' : 'text-black'} hover:text-gray-700 px-5 py-3 flex items-center transition duration-150 ease-in-out`}>Contact Me</Link>
+                <Link href="https://www.instagram.com/ardhkkaa_/" target='_blank' className={`font-bold ${scrolled ? 'text-black hover:text-gray-700' : 'text-black'} hover:text-gray-700 px-5 py-3 flex font-bold items-center transition duration-150 ease-in-out`}>Contact Me</Link>
               </li>
               <li>
                 <button

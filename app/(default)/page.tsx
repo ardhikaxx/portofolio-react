@@ -7,6 +7,7 @@ import Hero from '@/components/hero'
 import Skill from '@/components/skill'
 import Project from '@/components/project'
 import Profile from '@/components/profile'
+import Certificate from '@/components/certificate'
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Hero/>
       <Profile/>
       <Project/>
+      <Certificate/>
       <Skill/>
     </>
   )

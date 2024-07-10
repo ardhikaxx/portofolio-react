@@ -1,12 +1,11 @@
 'use client'
 
-import { useState } from 'react'
-import { Transition } from '@headlessui/react'
-import Project1 from '@/public/images/project/projek1.png'
-import Project2 from '@/public/images/project/projek2.png'
-import Project3 from '@/public/images/project/projek3.png'
-import Project4 from '@/public/images/project/projek4.jpg'
-import Image from 'next/image'
+import { useState } from 'react';
+import Project1 from '@/public/images/project/projek1.png';
+import Project2 from '@/public/images/project/projek2.png';
+import Project3 from '@/public/images/project/projek3.jpg';
+import Project4 from '@/public/images/project/projek4.png';
+import Image from 'next/image';
 
 const projects = [
   {
