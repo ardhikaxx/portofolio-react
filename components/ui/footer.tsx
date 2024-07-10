@@ -8,8 +8,7 @@ export default function Footer() {
   return (
     <footer>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-
-        <div className="md:flex md:items-center md:justify-between py-4 md:py-8 border-t border-gray-200">
+        <div className="flex flex-col items-center justify-center py-4 md:py-8 border-t border-gray-200 md:flex-row md:justify-between">
 
           <ul className="flex mb-4 md:order-1 md:ml-4 md:mb-0">
             <li>
@@ -23,12 +22,13 @@ export default function Footer() {
               </a>
             </li>
             <li className="ml-4">
-              <a href="https://www.linkedin.com/in/yanuar-ardhika-rahmadhani-ubaidillah-36a842287/" className="flex justify-center items-center text-gray-600 hover:text-gray-900 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out p-2" aria-label="Facebook">
-                <FontAwesomeIcon icon={faLinkedin} className="w-5 h-5 fill-current"/>
+              <a href="https://www.linkedin.com/in/yanuar-ardhika-rahmadhani-ubaidillah-36a842287/" className="flex justify-center items-center text-gray-600 hover:text-gray-900 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out p-2" aria-label="LinkedIn">
+                <FontAwesomeIcon icon={faLinkedin} className="w-5 h-5 fill-current" />
               </a>
             </li>
           </ul>
-          <div className="text-sm text-gray-600 mr-4">&copy; ARDHIKA. {currentYear} All rights reserved.</div>
+
+          <div className="text-sm text-gray-600 text-center md:text-right">&copy; ARDHIKA. {new Date().getFullYear()} All rights reserved.</div>
         </div>
       </div>
     </footer>

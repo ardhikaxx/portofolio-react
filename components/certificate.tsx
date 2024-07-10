@@ -266,19 +266,16 @@ const certificates = [
 ];
 
 export default function Project() {
-    const [isPaused, setIsPaused] = useState(false);
-
     const settings = {
         dots: false,
         infinite: true,
-        speed: 500,
+        speed: 700,
         slidesToShow: 3,
         slidesToScroll: 1,
-        autoplay: !isPaused,
-        autoplaySpeed: 1000,
-        pauseOnHover: true,
-        beforeChange: () => setIsPaused(true),
-        afterChange: () => setIsPaused(false),
+        autoplay: true,
+        autoplaySpeed: 2000, // 2 detik
+        pauseOnHover: false,
+        cssEase: 'ease-in-out',
         responsive: [
             {
                 breakpoint: 1024,
@@ -311,19 +308,13 @@ export default function Project() {
         <section className="bg-gray-100 py-10">
             <div className="max-w-6xl mx-auto px-4 sm:px-6">
                 <div className="text-center mb-12">
-                    <h1 className="text-3xl font-bold text-gray-800" data-aos="zoom-y-out">My Certificates</h1>
-                    <p className="text-xl text-gray-600" data-aos="zoom-y-out" data-aos-delay="150">Here are some certificates that I've received.</p>
+                    <h1 className="text-3xl font-bold text-gray-800" data-aos="zoom-y-out">My Certificate</h1>
+                    <p className="text-xl text-gray-600" data-aos="zoom-y-out" data-aos-delay="150">Here are some of the certificates I have received in recognition of my achievements.</p>
                 </div>
                 <Slider {...settings}>
                     {certificates.map(certificate => (
                         <div key={certificate.id} className="p-4" data-aos="zoom-y-out" data-aos-delay="250">
-                            <div
-                                className="bg-white shadow-lg rounded-xl overflow-hidden transform transition-transform duration-300"
-                                onMouseEnter={() => setIsPaused(true)}
-                                onMouseLeave={() => setIsPaused(false)}
-                                onTouchStart={() => setIsPaused(true)}
-                                onTouchEnd={() => setIsPaused(false)}
-                            >
+                            <div className="bg-white shadow-lg rounded-xl overflow-hidden transform transition-transform duration-300">
                                 <div className="relative overflow-hidden h-56">
                                     <Image
                                         src={certificate.image}
