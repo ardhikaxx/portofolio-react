@@ -316,7 +316,7 @@ export default function Project() {
                 </div>
                 <Slider {...settings}>
                     {certificates.map(certificate => (
-                        <div key={certificate.id} className="p-4">
+                        <div key={certificate.id} className="p-4" data-aos="zoom-y-out" data-aos-delay="250">
                             <div
                                 className="bg-white shadow-lg rounded-xl overflow-hidden transform transition-transform duration-300"
                                 onMouseEnter={() => setIsPaused(true)}
