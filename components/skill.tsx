@@ -70,6 +70,6 @@ interface SkillIconProps {
 
 function SkillIcon({ src, alt }: SkillIconProps) {
   return (
-    <img src={src} width="55" height="40" alt={alt} className="mx-auto" />
+    <img src={src} width="55" height="40" alt={alt} className="mx-auto" loading="lazy" />
   );
 }

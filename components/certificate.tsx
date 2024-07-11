@@ -320,6 +320,7 @@ export default function Project() {
                                         src={certificate.image}
                                         alt={certificate.name}
                                         className="w-full h-full object-cover transition-transform duration-500"
+                                        quality={75}
                                     />
                                 </div>
                             </div>

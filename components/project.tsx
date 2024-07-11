@@ -128,6 +128,7 @@ export default function Project() {
                 <Image
                   src={project.image}
                   alt={project.name}
+                  quality={75}
                   className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
