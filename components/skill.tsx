@@ -38,6 +38,7 @@ export default function Skill() {
                 </div>
               </div>
             </div>
+
             <div className="bg-white shadow-lg rounded-xl overflow-hidden">
               <div className="p-6">
                 <h2 className="text-2xl font-bold text-gray-800 mb-5 text-center">Mobile Development</h2>
@@ -70,6 +71,6 @@ interface SkillIconProps {
 
 function SkillIcon({ src, alt }: SkillIconProps) {
   return (
-    <img src={src} width="55" height="40" alt={alt} className="mx-auto" loading="lazy" />
+    <img src={src} width="55" height="55" alt={alt} className="mx-auto" loading="lazy" />
   );
 }

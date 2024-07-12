@@ -273,7 +273,7 @@ export default function Project() {
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 2000, // 2 detik
+        autoplaySpeed: 2000,
         pauseOnHover: false,
         cssEase: 'ease-in-out',
         responsive: [
@@ -308,18 +308,18 @@ export default function Project() {
         <section className="bg-gray-100 py-10">
             <div className="max-w-6xl mx-auto px-4 sm:px-6">
                 <div className="text-center mb-12">
-                    <h1 className="text-3xl font-bold text-gray-800" data-aos="zoom-y-out">My Certificate</h1>
+                    <h1 className="text-3xl font-bold text-gray-800" data-aos="zoom-y-out">My Certificates</h1>
                     <p className="text-xl text-gray-600" data-aos="zoom-y-out" data-aos-delay="150">Here are some of the certificates I have received in recognition of my achievements.</p>
                 </div>
                 <Slider {...settings}>
                     {certificates.map(certificate => (
                         <div key={certificate.id} className="p-4" data-aos="zoom-y-out" data-aos-delay="250">
-                            <div className="bg-white shadow-lg rounded-xl overflow-hidden transform transition-transform duration-300">
+                            <div className="bg-white shadow-lg rounded-xl overflow-hidden transform transition duration-300">
                                 <div className="relative overflow-hidden h-56">
                                     <Image
                                         src={certificate.image}
                                         alt={certificate.name}
-                                        className="w-full h-full object-cover transition-transform duration-500"
+                                        className="w-full h-full object-cover transition duration-500"
                                         quality={75}
                                     />
                                 </div>

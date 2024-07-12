@@ -37,31 +37,31 @@ export default function Profile() {
           </div>
           <div className="max-w-sm md:max-w-1xl mx-auto grid gap-3 grid-cols-4 md:grid-cols-5" data-aos="zoom-y-out" data-aos-delay="250">
             <div className="flex items-center justify-center py-2 col-span-1 md:col-auto">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" width="55" alt="vscode logo" loading="lazy" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg?v=1" width={55} height={55} alt="vscode logo" loading="lazy" />
             </div>
             <div className="flex items-center justify-center py-2 col-span-1 md:col-auto">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg" width="55" alt="visualstudio logo" loading="lazy" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg?v=1" width={55} height={55} alt="visualstudio logo" loading="lazy" />
             </div>
             <div className="flex items-center justify-center py-2 col-span-1 md:col-auto">
-              <img src="https://skillicons.dev/icons?i=powershell" width="55" alt="powershell logo" loading="lazy" />
+              <img src="https://skillicons.dev/icons?i=powershell?v=1" width={55} height={55} alt="powershell logo" loading="lazy" />
             </div>
             <div className="flex items-center justify-center py-2 col-span-1 md:col-auto">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg" width="55" alt="androidstudio logo" loading="lazy" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg?v=1" width={55} height={55} alt="androidstudio logo" loading="lazy" />
             </div>
             <div className="flex items-center justify-center py-2 col-span-1 md:col-auto">
-              <img src="https://cdn.simpleicons.org/postman/FF6C37" width="55" alt="postman logo" loading="lazy" />
+              <img src="https://cdn.simpleicons.org/postman/FF6C37?v=1" width={55} height={55} alt="postman logo" loading="lazy" />
             </div>
             <div className="flex items-center justify-center py-2 col-span-1 md:col-auto">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="55" alt="git logo" loading="lazy" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg?v=1" width={55} height={55} alt="git logo" loading="lazy" />
             </div>
             <div className="flex items-center justify-center py-2 col-span-1 md:col-auto">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="55" alt="github logo" loading="lazy" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg?v=1" width={55} height={55} alt="github logo" loading="lazy" />
             </div>
             <div className="flex items-center justify-center py-2 col-span-1 md:col-auto">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg" width="55" alt="trello logo" loading="lazy" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg?v=1" width={55} height={55} alt="trello logo" loading="lazy" />
             </div>
             <div className="flex items-center justify-center py-1 col-span-1 md:col-auto">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" width="55" alt="figma logo" loading="lazy" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg?v=1" width={55} height={55} alt="figma logo" loading="lazy" />
             </div>
           </div>
           <div className="max-w-3xl mx-auto mt-12 pt-20" data-aos="zoom-y-out">
