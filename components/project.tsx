@@ -133,7 +133,7 @@ export default function Project() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
                 <div className="absolute bottom-4 left-4 text-white">
-                  <h3 className="text-2xl font-semibold">{project.name}</h3>
+                  <h2 className="text-2xl font-semibold">{project.name}</h2>
                   <p className="text-sm">{project.year}</p>
                 </div>
               </div>
