@@ -1,19 +1,12 @@
 import Image from 'next/image';
-import Icon from '@mdi/react';
 import ProfilImage from '@/public/images/me.jpg';
 import '@fortawesome/fontawesome-free/css/all.css';
-import { mdiMicrosoftVisualStudioCode } from '@mdi/js';
-import { mdiAndroidStudio } from '@mdi/js';
-import { mdiPowershell } from '@mdi/js';
-import { mdiMicrosoftVisualStudio } from '@mdi/js';
-import { FaMapMarkerAlt, FaPhone, FaEnvelope } from 'react-icons/fa';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 
 export default function Profile() {
   return (
-    <section className="relative py-5 z-10">
+    <section className="bg-gray-100 relative py-5 z-10">
       <div className="absolute left-1/2 transform -translate-x-1/2 bottom-0 pointer-events-none -mb-32" aria-hidden="true">
         <svg width="1760" height="518" viewBox="0 0 1760 518" xmlns="http://www.w3.org/2000/svg">
           <defs>
@@ -35,7 +28,7 @@ export default function Profile() {
             <h2 className="h3 mb-4" data-aos="zoom-y-out">Apps I Frequently Use</h2>
             <p className="text-gray-600" data-aos="zoom-y-out">These are the apps I frequently use for daily development and design projects.</p>
           </div>
-          <div className="max-w-sm md:max-w-1xl mx-auto grid gap-3 grid-cols-4 md:grid-cols-5" data-aos="zoom-y-out" data-aos-delay="250">
+          <div className="max-w-sm md:max-w-1xl mx-auto grid gap-5 grid-cols-4 md:grid-cols-5" data-aos="zoom-y-out" data-aos-delay="250">
             <div className="flex items-center justify-center py-2 col-span-1 md:col-auto">
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" width={55} height={55} alt="vscode logo" loading="lazy" />
             </div>

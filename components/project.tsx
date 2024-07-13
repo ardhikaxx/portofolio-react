@@ -30,7 +30,7 @@ const projects = [
     id: 3,
     name: 'Mobile-based Posyandu Health Data Manager',
     description: 'I developed a mobile app for parents to manage toddler posyandu health data for the final project of even semester 2024. Our team passed funding from the "Program Kreativitas Mahasiswa" (PKM).',
-    image: Project4,
+    image: Project3,
     languages: ['android studio', 'dart', 'flutter'],
     link: 'https://youtu.be/ouWihtoRrXQ?si=i9-c8RCqJMOmwfLo',
     year: 2024
@@ -39,9 +39,9 @@ const projects = [
     id: 4,
     name: 'Website Card Monument',
     description: 'I created a website to introduce the history of Bondowoso, East Java, focusing on the Gerbong Maut incident during Dutch colonization.',
-    image: Project3,
+    image: Project4,
     languages: ['html', 'css', 'javascript'],
-    link: 'https://web-app-posyandu.vercel.app/',
+    link: 'https://monumen-gerbong-maut.vercel.app/',
     year: 2024
   },
 ]
@@ -122,14 +122,14 @@ export default function Project() {
           {projects.map(project => (
             <div
               key={project.id}
-              className="bg-white shadow-lg rounded-xl overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
+              className="bg-white shadow-lg rounded-xl overflow-hidden transition-transform duration-300 group"
             >
               <div className="relative overflow-hidden h-56">
                 <Image
                   src={project.image}
                   alt={project.name}
                   quality={75}
-                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
                 <div className="absolute bottom-4 left-4 text-white">

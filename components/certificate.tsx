@@ -44,228 +44,234 @@ import Project40 from '@/public/images/certificate/40.jpg';
 import Project41 from '@/public/images/certificate/41.jpg';
 import Project42 from '@/public/images/certificate/42.png';
 import Project43 from '@/public/images/certificate/43.jpg';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import Slider from 'react-slick';
+import { motion, AnimatePresence } from 'framer-motion';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 const certificates = [
     {
         id: 1,
-        name: 'Eat Well Analyzer Website',
+        name: 'Siswa terbaik kompetensi keahlian Teknik Elektronika Industri 2022',
         image: Project1,
     },
     {
         id: 2,
-        name: 'Introduction to React js Workshop',
+        name: 'Juara 3 Bidang Inovasi Teknologi Pemuda Pelopor Provinsi Jawa Timur 2021',
         image: Project2,
     },
     {
         id: 3,
-        name: 'Advanced CSS and Sass',
+        name: 'Literasi Digital Perguruan Tinggi 2023',
         image: Project3,
     },
     {
         id: 4,
-        name: 'JavaScript Algorithms and Data Structures',
+        name: 'Webinar React JS: "Kickstart Your Front End Developer Career with React JS" 2023',
         image: Project4,
     },
     {
         id: 5,
-        name: 'The Web Developer Bootcamp',
+        name: 'Webinar Flutter: "How to Start Your Mobile Developer Career with Flutter" 2023',
         image: Project5,
     },
     {
         id: 6,
-        name: 'Responsive Web Design',
+        name: 'Harisenin MiniSchool UI/UX Design 2023',
         image: Project6,
     },
     {
         id: 7,
-        name: 'JavaScript Algorithms and Data Structures',
+        name: 'GLOBAL WEBINAR V.2: "IOT FOR SOCIETAL GOOD" 2023',
         image: Project7,
     },
     {
         id: 8,
-        name: 'JavaScript Algorithms and Data Structures',
+        name: 'Kickstart Fullstack Web Development Journey 2023',
         image: Project8,
     },
     {
         id: 9,
-        name: 'JavaScript Algorithms and Data Structures',
+        name: 'Start a Career as UI/UX Design Through Digital Skola Scholarship Program 2023',
         image: Project9,
     },
     {
         id: 10,
-        name: 'JavaScript Algorithms and Data Structures',
+        name: 'Belajar Dasar Pemrograman Web - dicoding 2023',
         image: Project10,
     },
     {
         id: 11,
-        name: 'JavaScript Algorithms and Data Structures',
+        name: 'Belajar Membuat Front-End Web untuk Pemula - dicoding 2023',
         image: Project11,
     },
     {
         id: 12,
-        name: 'JavaScript Algorithms and Data Structures',
+        name: 'Belajar Dasar Pemrograman Javascript - dicoding 2023',
         image: Project12,
     },
     {
         id: 13,
-        name: 'JavaScript Algorithms and Data Structures',
+        name: 'Webinar "Solusi Backup Cerdas Melawan Ransomware" 2023',
         image: Project13,
     },
     {
         id: 14,
-        name: 'JavaScript Algorithms and Data Structures',
+        name: 'Webinar "Roadmap to Web Development Mastery: A Comprehensive Guide" 2023',
         image: Project14,
     },
     {
         id: 15,
-        name: 'JavaScript Algorithms and Data Structures',
+        name: 'Meniti Karier sebagai Software Developer - dicoding 2023',
         image: Project15,
     },
     {
         id: 16,
-        name: 'JavaScript Algorithms and Data Structures',
+        name: 'Lomba 17-an game html by codecafe.id 2023',
         image: Project16,
     },
     {
         id: 17,
-        name: 'JavaScript Algorithms and Data Structures',
+        name: 'UI/UX Fundamental - MySkill 2023',
         image: Project17,
     },
     {
         id: 18,
-        name: 'JavaScript Algorithms and Data Structures',
+        name: 'Introduction to JavaScript for Beginners - CodeCamp Harisenin 2023',
         image: Project18,
     },
     {
         id: 19,
-        name: 'JavaScript Algorithms and Data Structures',
+        name: 'Workshop Live Coding "Mmebangun Kreativitas IOT dengan Platform Blynk" 2023',
         image: Project19,
     },
     {
         id: 20,
-        name: 'JavaScript Algorithms and Data Structures',
+        name: 'Webinar "Membangun Personal Branding Melalui Website sebagai Mahasiswa IT" 2023',
         image: Project20,
     },
     {
         id: 21,
-        name: 'JavaScript Algorithms and Data Structures',
+        name: 'Webinar "Introduction to Flutter Programming" 2023',
         image: Project21,
     },
     {
         id: 22,
-        name: 'JavaScript Algorithms and Data Structures',
+        name: 'Scholarship Hack 2023',
         image: Project22,
     },
     {
         id: 23,
-        name: 'JavaScript Algorithms and Data Structures',
+        name: 'SELARAS - Semarak Penalaran dan Kreativitas 2023',
         image: Project23,
     },
     {
         id: 24,
-        name: 'JavaScript Algorithms and Data Structures',
+        name: 'Mini Bootcamp Introduction to Web Development 2023',
         image: Project24,
     },
     {
         id: 25,
-        name: 'JavaScript Algorithms and Data Structures',
+        name: 'Exploring Front-End Developer: Wonders and Opportunities - CodeCamp Harisenin 2023',
         image: Project25,
     },
     {
         id: 26,
-        name: 'JavaScript Algorithms and Data Structures',
+        name: 'Exploring Golang: Wonders and Opportunities - CodeCamp Harisenin 2023',
         image: Project26,
     },
     {
         id: 27,
-        name: 'JavaScript Algorithms and Data Structures',
+        name: 'Webinar "Introduction to Back-End Web Development" 2023',
         image: Project27,
     },
     {
         id: 28,
-        name: 'JavaScript Algorithms and Data Structures',
+        name: 'Mini Bootcamp Introduction to Flutter "Exploring Mobile Development Careers and Trend Insight" 2023',
         image: Project28,
     },
     {
         id: 29,
-        name: 'JavaScript Algorithms and Data Structures',
+        name: 'Workshop Online MCD Meetup 2.0 "Web Development Bootcamp Front-End Unlock Your Web Potential Empowering Front-End Creators" 2023',
         image: Project29,
     },
     {
         id: 30,
-        name: 'JavaScript Algorithms and Data Structures',
+        name: 'Workshop Online MCD Meetup 2.0 "Web Development Bootcamp Basic Back-End Level Up Your Coding Skills Mastering the Essntials of Back-End Development" 2023',
         image: Project30,
     },
     {
         id: 31,
-        name: 'JavaScript Algorithms and Data Structures',
+        name: 'Belajar Dasar-dasar HTML dan CSS - CODEPOLITAN 2023',
         image: Project31,
     },
     {
         id: 32,
-        name: 'JavaScript Algorithms and Data Structures',
+        name: 'Belajar JavaScript Dasar - CODEPOLITAN 2023',
         image: Project32,
     },
     {
         id: 33,
-        name: 'JavaScript Algorithms and Data Structures',
+        name: 'Belajar JavaScript Async - CODEPOLITAN 2023',
         image: Project33,
     },
     {
         id: 34,
-        name: 'JavaScript Algorithms and Data Structures',
+        name: 'Webinar Start Your Journey with Laravel 2023',
         image: Project34,
     },
     {
         id: 35,
-        name: 'JavaScript Algorithms and Data Structures',
+        name: 'Webinar "Perfecting Your Personal Portofolio" - Harisenin x Cakap 2023',
         image: Project35,
     },
     {
         id: 36,
-        name: 'JavaScript Algorithms and Data Structures',
+        name: 'Introduction to UI/UX: Creating Stunning Apps with Great Visual Interface - GDSC Universitas Ciputra 2023',
         image: Project36,
     },
     {
         id: 37,
-        name: 'JavaScript Algorithms and Data Structures',
+        name: 'Juara 1 Poster TIF Exhibition - Teknik Informatika - Jurusan Teknologi Informasi Politeknik Negeri Jember 2023',
         image: Project37,
     },
     {
         id: 38,
-        name: 'JavaScript Algorithms and Data Structures',
+        name: 'Webinar Leveling Up Your Branding and Mastering MERN : Full Stack Web Development - GDSC Universtas Sriwijaya 2023',
         image: Project38,
     },
     {
         id: 39,
-        name: 'JavaScript Algorithms and Data Structures',
+        name: 'Webinar First Step into Flutter Programmming - GDSC Insitut Sains Dan Teknologi Terpadu Surabaya 2023',
         image: Project39,
     },
     {
         id: 40,
-        name: 'JavaScript Algorithms and Data Structures',
+        name: 'Webinar Membuat mikrolog dengan laravel 11 dan livewire 2023',
         image: Project40,
     },
     {
         id: 41,
-        name: 'JavaScript Algorithms and Data Structures',
+        name: 'Workshop "Pengenalan React.js: Membangun Aplikasi Web Interaktif" - Bangkalan Developer 2024',
         image: Project41,
     },
     {
         id: 42,
-        name: 'JavaScript Algorithms and Data Structures',
+        name: 'Kegiatan Sosialisasi PKM RAYA 2024',
         image: Project42,
     },
     {
         id: 43,
-        name: 'JavaScript Algorithms and Data Structures',
+        name: 'Kepanitian Dialog Pimpinan & Sosialisasi PTNBH 2024',
         image: Project43,
     },
 ];
 
 export default function Project() {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [selectedCertificate, setSelectedCertificate] = useState<{ image: StaticImageData | string; name: string } | null>(null);
+
     const settings = {
         dots: false,
         infinite: true,
@@ -283,25 +289,35 @@ export default function Project() {
                     slidesToShow: 2,
                     slidesToScroll: 1,
                     infinite: true,
-                    dots: true
-                }
+                    dots: true,
+                },
             },
             {
                 breakpoint: 600,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    initialSlide: 1
-                }
+                    initialSlide: 1,
+                },
             },
             {
                 breakpoint: 480,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-        ]
+                    slidesToScroll: 1,
+                },
+            },
+        ],
+    };
+
+    const openModal = (certificate: { image: StaticImageData | string; name: string }) => {
+        setSelectedCertificate(certificate);
+        setIsModalOpen(true);
+    };
+
+    const closeModal = () => {
+        setIsModalOpen(false);
+        setSelectedCertificate(null);
     };
 
     return (
@@ -313,14 +329,14 @@ export default function Project() {
                 </div>
                 <Slider {...settings}>
                     {certificates.map(certificate => (
-                        <div key={certificate.id} className="p-4" data-aos="zoom-y-out" data-aos-delay="250">
-                            <div className="bg-white shadow-lg rounded-xl overflow-hidden transform transition duration-300">
+                        <div key={certificate.id} className="p-4" data-aos="zoom-y-out" data-aos-delay="250" onClick={() => openModal(certificate)}>
+                            <div className="bg-white shadow-lg rounded-xl overflow-hidden transform transition duration-300 cursor-pointer">
                                 <div className="relative overflow-hidden h-56">
                                     <Image
                                         src={certificate.image}
                                         alt={certificate.name}
                                         className="w-full h-full object-cover transition duration-500"
-                                        quality={75}
+                                        quality={100}
                                     />
                                 </div>
                             </div>
@@ -328,6 +344,34 @@ export default function Project() {
                     ))}
                 </Slider>
             </div>
+            <AnimatePresence>
+                {isModalOpen && selectedCertificate && (
+                    <motion.div 
+                        className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm z-50"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1, transition: { duration: 0.5, ease: 'easeInOut' } }}
+                        exit={{ opacity: 0, transition: { duration: 0.3, ease: 'easeInOut' } }}
+                    >
+                        <motion.div 
+                            className="bg-white p-5 rounded-lg max-w-lg w-full relative"
+                            initial={{ scale: 0.8, opacity: 0 }}
+                            animate={{ scale: 1, opacity: 1, transition: { type: 'spring', stiffness: 300, damping: 30 } }}
+                            exit={{ scale: 0.8, opacity: 0, transition: { duration: 0.3, ease: 'easeInOut' } }}
+                        >
+                            <button onClick={closeModal} className="absolute top-3 right-3 w-10 h-10 flex items-center justify-center rounded-full bg-gradient-to-r from-[#4895D1] to-[#78B1E5] text-white text-xl">
+                                <FontAwesomeIcon icon={faTimes} />
+                            </button>
+                            <Image
+                                src={selectedCertificate.image}
+                                alt={selectedCertificate.name}
+                                className="w-full h-auto max-h-[90vh] rounded-xl object-contain"
+                                quality={100}
+                            />
+                            <p className="mt-4 text-center text-lg font-semibold">{selectedCertificate.name}</p>
+                        </motion.div>
+                    </motion.div>
+                )}
+            </AnimatePresence>
         </section>
     );
 }

@@ -24,16 +24,16 @@ export default function Skill() {
                   <SkillIcon src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="Vue.js logo" />
                   <SkillIcon src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express logo" />
                   <SkillIcon src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js logo" />
-                  <SkillIcon src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js logo" />
                   <SkillIcon src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP logo" />
                   <SkillIcon src="https://cdn.simpleicons.org/laravel/FF2D20" alt="Laravel logo" />
-                  <SkillIcon src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/composer/composer-original.svg" alt="Composer logo" />
-                  <SkillIcon src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg" alt="Material UI logo" />
+                  <SkillIcon src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js logo" />
+                  <SkillIcon src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL logo" />
+                  <SkillIcon src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB logo" />
                 </div>
                 <div className="flex justify-center items-center mt-5">
-                  <div className="bg-blue-100 text-blue-700 text-sm font-bold px-4 py-2 rounded-full">
-                    <span className="mr-2">Level:</span>
-                    <span className="bg-blue-200 text-blue-700 px-3 py-1 rounded-full">Beginner</span>
+                  <div className="bg-blue-50 text-blue-600 text-sm font-bold px-4 py-2 rounded-full">
+                    <span className="mr-2">Skill Level :</span>
+                    <span className="bg-blue-100 text-blue-600 px-3 py-1 rounded-full">Beginner</span>
                   </div>
                 </div>
               </div>
@@ -42,17 +42,21 @@ export default function Skill() {
             <div className="bg-white shadow-lg rounded-xl overflow-hidden">
               <div className="p-6">
                 <h2 className="text-2xl font-bold text-gray-800 mb-5 text-center">Mobile Development</h2>
-                <div className="flex justify-center items-center gap-4 md:gap-3 py-10 mx-auto">
+                <div className="grid grid-cols-4 gap-4 md:grid-cols-6 md:gap-3 justify-items-center items-center mx-auto">
                   <SkillIcon src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" alt="Android logo" />
                   <SkillIcon src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg" alt="Android Studio logo" />
                   <SkillIcon src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" alt="Kotlin logo" />
                   <SkillIcon src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" alt="Dart logo" />
                   <SkillIcon src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter logo" />
+                  <SkillIcon src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React Native logo" />
+                  <SkillIcon src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase logo" />
+                  <SkillIcon src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt="SQLite logo" />
+                  <SkillIcon src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg" alt="GraphQL logo" />
                 </div>
                 <div className="flex justify-center items-center mt-5">
-                  <div className="bg-blue-100 text-blue-700 text-sm font-bold px-4 py-2 rounded-full">
-                    <span className="mr-2">Level:</span>
-                    <span className="bg-blue-200 text-blue-700 px-3 py-1 rounded-full">Beginner</span>
+                  <div className="bg-blue-50 text-blue-600 text-sm font-bold px-4 py-2 rounded-full">
+                    <span className="mr-2">Skill Level :</span>
+                    <span className="bg-blue-100 text-blue-600 px-3 py-1 rounded-full">Beginner</span>
                   </div>
                 </div>
               </div>
