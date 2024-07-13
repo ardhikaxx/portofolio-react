@@ -113,7 +113,7 @@ export default function MobileMenu() {
               </button>
             </li>
             <li>
-              <button className="btn-sm text-gray-200 bg-gray-900 hover:bg-gray-800 py-3 px-5 my-2" onClick={handleDownload}>
+              <button className="btn-sm btn-sm btn px-3 flex items-center py-2 rounded-full text-gray-200 bg-gray-900 hover:bg-gray-800 my-2" onClick={handleDownload}>
                 Download CV
                 <Icon path={mdiTrayArrowDown} className='ml-2' size={1} />
               </button>

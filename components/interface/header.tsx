@@ -75,7 +75,7 @@ export default function Header() {
               <li>
                 <button
                   onClick={handleDownload}
-                  className={`btn-sm btn px-3 rounded-full ${scrolled
+                  className={`btn-sm btn px-3 flex items-center py-2 rounded-full ${scrolled
                     ? 'bg-gradient-to-r from-[#4895D1] to-[#78B1E5]'
                     : 'bg-gray-800 hover:bg-gray-700'
                     } text-white ml-3 transition-colors duration-300`}

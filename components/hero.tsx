@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import LogoImage from '@/public/images/logo-simple.png';
-import { FlipWords } from "./ui/flip-words";
+import { FlipWords } from "./interface/flip-words";
 import React from 'react';
-import DownloadButton from './ui/DownloadButton';
+import DownloadButton from './interface/DownloadButton';
 
 export default function Hero() {
   const words = ["Front-End", "Web", "Mobile"];
