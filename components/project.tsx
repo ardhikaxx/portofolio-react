@@ -113,8 +113,7 @@ export default function Project() {
   const [tab, setTab] = useState<number>(1)
 
   return (
-    <section className="dark:bg-white bg-black  dark:bg-grid-black/[0.1] bg-grid-white/[0.2] relative py-10">
-      <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-white bg-dark [mask-image:radial-gradient(ellipse_at_center,transparent_20%,white)]"></div>
+    <section className="bg-gray-100 relative py-10">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-12">
           <h1 className="text-3xl font-bold text-gray-800" data-aos="zoom-y-out">My Project</h1>

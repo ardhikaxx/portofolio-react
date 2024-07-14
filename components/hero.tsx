@@ -40,7 +40,7 @@ export default function Hero() {
                 <FlipWords className='text-xl md:text-4xl text-gray-700' words={words} />
                 <p className="text-gray-700 font-bold"> Developer</p>
               </div>
-              <p className="text-xl text-gray-700 mb-8" data-aos="zoom-y-out" data-aos-delay="150">I am a Junior Web & Mobile Developer focused on responsive, attractive and functional interfaces across multiple devices and platforms.</p>
+              <p className="text-xl text-gray-600 font-medium mb-8" data-aos="zoom-y-out" data-aos-delay="150">I am a Junior Web & Mobile Developer focused on responsive, attractive and functional interfaces across multiple devices and platforms.</p>
               <div className="max-w-xl mx-auto sm:max-w-none flex items-center justify-center gap-5" data-aos="zoom-y-out" data-aos-delay="300">
                 <div></div>
                 <div>

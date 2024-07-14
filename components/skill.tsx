@@ -1,7 +1,6 @@
 export default function Skill() {
   return (
-    <section className="dark:bg-white bg-black  dark:bg-grid-black/[0.1] bg-grid-white/[0.2] relative py-10">
-      <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-white bg-dark [mask-image:radial-gradient(ellipse_at_center,transparent_20%,white)]"></div>
+    <section className="bg-gray-100 relative py-10">
       <div className="relative max-w-6xl mx-auto px-4 mt-5 sm:px-6 mb-10">
         <div className="pt-5 md:pt-10">
           <div className="max-w-3xl text-center mx-auto pb-5 md:pb-16">
