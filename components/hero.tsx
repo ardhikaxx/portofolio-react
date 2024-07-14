@@ -8,7 +8,7 @@ export default function Hero() {
   const words = ["Front-End", "Web", "Mobile"];
 
   return (
-    <section className="w-full dark:bg-white bg-black  dark:bg-grid-black/[0.1] bg-grid-white/[0.2] relative overflow-hidden py-2 z-10">
+    <section className="w-full dark:bg-gray-100 bg-black  dark:bg-grid-black/[0.1] bg-grid-white/[0.2] relative overflow-hidden py-2 z-10">
       <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-white bg-dark [mask-image:radial-gradient(ellipse_at_center,transparent_20%,white)]"></div>
       <div className="absolute left-1/2 transform -translate-x-1/2 bottom-0 pointer-events-none z-0" aria-hidden="true">
         <svg width="1360" height="578" viewBox="0 0 1360 578" xmlns="http://www.w3.org/2000/svg">
