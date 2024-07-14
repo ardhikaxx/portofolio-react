@@ -1,11 +1,10 @@
 export default function Skill() {
   return (
-    <section className="bg-gray-100 py-10">
-      <div className="absolute inset-0 bg-gray-100 pointer-events-none mb-16" aria-hidden="true"></div>
-      <div className="absolute left-0 right-0 m-auto w-px p-px h-20 bg-gray-200 transform -translate-y-1/2"></div>
+    <section className="dark:bg-white bg-black  dark:bg-grid-black/[0.1] bg-grid-white/[0.2] relative py-10">
+      <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-white bg-dark [mask-image:radial-gradient(ellipse_at_center,transparent_20%,white)]"></div>
       <div className="relative max-w-6xl mx-auto px-4 mt-5 sm:px-6 mb-10">
-        <div className="pt-12 md:pt-20">
-          <div className="max-w-3xl text-center mx-auto mb-12 pb-12 md:pb-16">
+        <div className="pt-5 md:pt-10">
+          <div className="max-w-3xl text-center mx-auto pb-5 md:pb-16">
             <h1 className="text-3xl font-bold text-gray-800" data-aos="zoom-y-out">My Skill</h1>
             <p className="text-xl text-gray-600" data-aos="zoom-y-out" data-aos-delay="150">I excel in problem solving, teamwork, and quick adaptation to cutting-edge technology, utilizing the latest tools in my software development projects.</p>
           </div>

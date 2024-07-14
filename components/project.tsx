@@ -6,6 +6,7 @@ import Project2 from '@/public/images/project/projek2.png';
 import Project3 from '@/public/images/project/projek3.jpg';
 import Project4 from '@/public/images/project/projek4.png';
 import Image from 'next/image';
+import { LinkPreview } from "@/components/interface/link-preview";
 
 const projects = [
   {
@@ -96,7 +97,7 @@ const icons: any = {
 
 export default function Project() {
   const [expandedProject, setExpandedProject] = useState<number | null>(null);
-  const maxLength = 95;
+  const maxLength = 120;
 
   const toggleDescription = (projectId: number) => {
     setExpandedProject(expandedProject === projectId ? null : projectId);
@@ -112,7 +113,8 @@ export default function Project() {
   const [tab, setTab] = useState<number>(1)
 
   return (
-    <section className="bg-gray-100 py-10">
+    <section className="dark:bg-white bg-black  dark:bg-grid-black/[0.1] bg-grid-white/[0.2] relative py-10">
+      <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-white bg-dark [mask-image:radial-gradient(ellipse_at_center,transparent_20%,white)]"></div>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-12">
           <h1 className="text-3xl font-bold text-gray-800" data-aos="zoom-y-out">My Project</h1>
@@ -154,14 +156,12 @@ export default function Project() {
                     </div>
                   ))}
                 </div>
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <LinkPreview
+                  url={project.link}
                   className="inline-block px-5 py-2 bg-gradient-to-r from-[#4895D1] to-[#78B1E5] text-white text-sm font-semibold rounded-full shadow-lg hover:bg-blue-600 transition duration-300"
                 >
                   View Project
-                </a>
+                </LinkPreview>
               </div>
             </div>
           ))}

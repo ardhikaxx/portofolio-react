@@ -321,11 +321,13 @@ export default function Project() {
     };
 
     return (
-        <section className="bg-gray-100 py-10">
+        <section className="dark:bg-white bg-black  dark:bg-grid-black/[0.1] bg-grid-white/[0.2] relative py-10">
+            <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-white bg-dark [mask-image:radial-gradient(ellipse_at_center,transparent_20%,white)]"></div>
             <div className="max-w-6xl mx-auto px-4 sm:px-6">
                 <div className="text-center mb-12">
                     <h1 className="text-3xl font-bold text-gray-800" data-aos="zoom-y-out">My Certificates</h1>
                     <p className="text-xl text-gray-600" data-aos="zoom-y-out" data-aos-delay="150">Here are some of the certificates I have received in recognition of my achievements.</p>
+                    <p className="text-xl text-gray-600" data-aos="zoom-y-out" data-aos-delay="150">Click on the image to view certificate details</p>
                 </div>
                 <Slider {...settings}>
                     {certificates.map(certificate => (

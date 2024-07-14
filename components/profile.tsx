@@ -6,7 +6,8 @@ import { faInstagram, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-
 
 export default function Profile() {
   return (
-    <section className="bg-gray-100 relative py-5 z-10">
+    <section className="dark:bg-white bg-black  dark:bg-grid-black/[0.1] bg-grid-white/[0.2] relative py-5 z-10">
+      <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-white bg-dark [mask-image:radial-gradient(ellipse_at_center,transparent_20%,white)]"></div>
       <div className="absolute left-1/2 transform -translate-x-1/2 bottom-0 pointer-events-none -mb-32" aria-hidden="true">
         <svg width="1760" height="518" viewBox="0 0 1760 518" xmlns="http://www.w3.org/2000/svg">
           <defs>
@@ -24,8 +25,8 @@ export default function Profile() {
       </div>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="py-12 md:py-20">
-          <div className="mx-auto text-center pb-12 md:pb-16">
-            <h2 className="h3 mb-4" data-aos="zoom-y-out">Apps I Frequently Use</h2>
+          <div className="mx-auto text-center pb-5 md:pb-6">
+            <h2 className="text-3xl font-bold text-gray-800" data-aos="zoom-y-out">Apps I Frequently Use</h2>
             <p className="text-gray-600" data-aos="zoom-y-out">These are the apps I frequently use for daily development and design projects.</p>
           </div>
           <div className="max-w-sm md:max-w-1xl mx-auto grid gap-5 grid-cols-4 md:grid-cols-5" data-aos="zoom-y-out" data-aos-delay="250">

@@ -8,7 +8,8 @@ export default function Hero() {
   const words = ["Front-End", "Web", "Mobile"];
 
   return (
-    <section className="bg-gray-100 relative overflow-hidden py-2 z-10">
+    <section className="w-full dark:bg-white bg-black  dark:bg-grid-black/[0.1] bg-grid-white/[0.2] relative overflow-hidden py-2 z-10">
+      <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-white bg-dark [mask-image:radial-gradient(ellipse_at_center,transparent_20%,white)]"></div>
       <div className="absolute left-1/2 transform -translate-x-1/2 bottom-0 pointer-events-none z-0" aria-hidden="true">
         <svg width="1360" height="578" viewBox="0 0 1360 578" xmlns="http://www.w3.org/2000/svg">
           <defs>
@@ -35,11 +36,11 @@ export default function Hero() {
             </div>
             <div className="max-w-3xl mx-auto">
               <div className="text-xl md:text-4xl text-gray-800 mb-2 flex justify-center items-center" data-aos="zoom-y-out" data-aos-delay="150">
-                <p className="text-neutral-600 font-bold">I'm a</p>
-                <FlipWords className='text-xl md:text-4xl text-neutral-600' words={words} />
-                <p className="text-neutral-600 font-bold"> Developer</p>
+                <p className="text-gray-700 font-bold">I'm a</p>
+                <FlipWords className='text-xl md:text-4xl text-gray-700' words={words} />
+                <p className="text-gray-700 font-bold"> Developer</p>
               </div>
-              <p className="text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150">I am a Junior Web & Mobile Developer focused on responsive, attractive and functional interfaces across multiple devices and platforms.</p>
+              <p className="text-xl text-gray-700 mb-8" data-aos="zoom-y-out" data-aos-delay="150">I am a Junior Web & Mobile Developer focused on responsive, attractive and functional interfaces across multiple devices and platforms.</p>
               <div className="max-w-xl mx-auto sm:max-w-none flex items-center justify-center gap-5" data-aos="zoom-y-out" data-aos-delay="300">
                 <div></div>
                 <div>
