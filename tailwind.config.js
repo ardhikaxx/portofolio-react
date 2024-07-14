@@ -122,18 +122,12 @@ module.exports = {
         '98': '.98'
       },
       animation: {
-        scroll: "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
         float: 'float 3s ease-in-out infinite',
       },
       keyframes: {
         float: {
           '0%, 100%': { transform: 'translateY(0)', },
           '50%': { transform: 'translateY(-5%)', },
-        },
-        scroll: {
-          to: {
-            transform: "translate(calc(-50% - 0.5rem))",
-          },
         },
       },
       zIndex: {
@@ -143,7 +137,6 @@ module.exports = {
   },
   plugins: [
     require('@tailwindcss/forms'),
-    [addVariablesForColors],
     function ({ matchUtilities, theme }) {
       matchUtilities(
         {
@@ -168,14 +161,3 @@ module.exports = {
     },
   ],
 };
-
-function addVariablesForColors({ addBase, theme }) {
-  let allColors = flattenColorPalette(theme("colors"));
-  let newVars = Object.fromEntries(
-    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
-  );
-
-  addBase({
-    ":root": newVars,
-  });
-}
