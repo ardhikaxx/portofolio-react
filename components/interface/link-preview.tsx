@@ -9,7 +9,6 @@ import {
     useMotionValue,
     useSpring,
 } from "framer-motion";
-import Link from "next/link";
 import { cn } from "@/utils/cn";
 
 type LinkPreviewProps = {
@@ -98,11 +97,17 @@ export const LinkPreview = ({
                 }}
             >
                 <HoverCardPrimitive.Trigger
+                    asChild
                     onMouseMove={handleMouseMove}
-                    className={cn("text-black dark:text-white", className)}
-                    href={url}
                 >
-                    {children}
+                    <a
+                        href={url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={cn("text-black dark:text-white", className)}
+                    >
+                        {children}
+                    </a>
                 </HoverCardPrimitive.Trigger>
 
                 <HoverCardPrimitive.Content
@@ -131,8 +136,10 @@ export const LinkPreview = ({
                                     x: translateX,
                                 }}
                             >
-                                <Link
+                                <a
                                     href={url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                     className="block p-1 bg-white border-2 border-transparent shadow rounded-xl hover:bg-gradient-to-r from-[#4895D1] to-[#78B1E5]"
                                     style={{ fontSize: 0 }}
                                 >
@@ -146,7 +153,7 @@ export const LinkPreview = ({
                                         className="rounded-lg"
                                         alt="preview image"
                                     />
-                                </Link>
+                                </a>
                             </motion.div>
                         )}
                     </AnimatePresence>
