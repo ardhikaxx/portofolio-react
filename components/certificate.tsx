@@ -117,7 +117,7 @@ export default function Certificate() {
                             <Image
                                 src={selectedCertificate.image}
                                 alt={selectedCertificate.name}
-                                className="w-full h-auto max-h-[90vh] rounded-xl object-contain"
+                                className="w-full h-auto max-h-[70vh] rounded-xl object-contain"
                                 quality={100}
                             />
                             <p className="mt-4 text-center text-lg font-semibold">{selectedCertificate.name}</p>

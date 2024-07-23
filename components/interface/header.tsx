@@ -4,8 +4,7 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Logo from './logo'
 import MobileMenu from './mobile-menu';
-import Icon from '@mdi/react';
-import { mdiTrayArrowDown } from '@mdi/js';
+import { FiDownload } from 'react-icons/fi';
 import { toast } from 'react-toastify';
 
 export default function Header() {
@@ -76,12 +75,12 @@ export default function Header() {
                 <button
                   onClick={handleDownload}
                   className={`btn-sm btn px-4 flex items-center py-2 font-semibold rounded-full ${scrolled
-                    ? 'bg-gradient-to-r from-[#4895D1] to-[#78B1E5]'
-                    : 'bg-gray-800 hover:bg-gray-700'
-                    } text-white ml-3 transition-colors duration-300`}
+                    ? 'bg-gradient-to-r from-[#4895D1] to-[#78B1E5] text-white'
+                    : 'bg-black text-white'
+                    } ml-3 transition-colors duration-300`}
                 >
                   <span>Download CV</span>
-                  <Icon path={mdiTrayArrowDown} className='ml-2' size={1} />
+                  <FiDownload className='ml-2' size={20} />
                 </button>
               </li>
             </ul>
