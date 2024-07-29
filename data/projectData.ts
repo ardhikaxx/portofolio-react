@@ -2,6 +2,7 @@ import Project1 from '@/public/images/project/projek1.png';
 import Project2 from '@/public/images/project/projek2.png';
 import Project3 from '@/public/images/project/projek3.jpg';
 import Project4 from '@/public/images/project/projek4.png';
+import Project5 from '@/public/images/project/projek5.png';
 
 export const projects = [
     {
@@ -40,4 +41,13 @@ export const projects = [
         link: 'https://monumen-gerbong-maut.vercel.app/',
         year: 2024
     },
+    {
+        id: 5,
+        name: "Web Design - Nusa Bus and Nusa Rent",
+        description: "I created a website design for Nusa Bus and Nusa Rent, which aims to introduce transportation and vehicle rental services. The website displays information about the various types of services, available fleets, and how to book.",
+        image: Project5,
+        languages: ['Figma'],
+        link: "https://www.figma.com/design/g9MVWqKHGlAFkJ5xODqAWr/Website-Design---Nusa?node-id=0-1&t=mSwe1AlHmmMDIBQD-1",
+        year: 2024
+    }    
 ]

@@ -50,7 +50,10 @@ const icons: any = {
   ),
   'next.js': (
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" width="20" height="20" alt="nextjs logo" loading='lazy' />
-  )
+  ),
+  Figma : (
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" width="20" height="20" alt="figma logo" loading='lazy' />
+  ),
 }
 
 export default function Project() {
