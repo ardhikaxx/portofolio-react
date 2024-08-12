@@ -7,6 +7,7 @@ import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import SchoolIcon from '@mui/icons-material/School';
 import Typography from '@mui/material/Typography';
+import { educationData } from '@/data/educationData';
 
 export default function Education() {
     return (
@@ -16,34 +17,24 @@ export default function Education() {
                 <p className="text-xl text-gray-600" data-aos="zoom-y-out" data-aos-delay="150">Here is a timeline of my educational journey</p>
             </div>
             <Timeline position="alternate" className="mt-10" data-aos="zoom-y-out" data-aos-delay="150">
-                <TimelineItem>
-                    <TimelineSeparator>
-                        <TimelineDot color="primary">
-                            <SchoolIcon />
-                        </TimelineDot>
-                        <TimelineConnector />
-                    </TimelineSeparator>
-                    <TimelineContent sx={{ py: '12px', px: 2 }}>
-                        <Typography variant="h6" component="span">
-                            Bondowoso State Vocational High School 3
-                        </Typography>
-                        <Typography>Industrial Electronics Engineering, 2019-2022</Typography>
-                    </TimelineContent>
-                </TimelineItem>
-                <TimelineItem>
-                    <TimelineSeparator>
-                        <TimelineDot color="primary">
-                            <SchoolIcon />
-                        </TimelineDot>
-                        <TimelineConnector />
-                    </TimelineSeparator>
-                    <TimelineContent sx={{ py: '12px', px: 2 }}>
-                        <Typography variant="h6" component="span">
-                            Jember State Polytechnic
-                        </Typography>
-                        <Typography>Major in Information Technology - Informatics Engineering Study Program, 2022 - Present</Typography>
-                    </TimelineContent>
-                </TimelineItem>
+                {educationData.map((education, index) => (
+                    <TimelineItem key={index}>
+                        <TimelineSeparator>
+                            <TimelineDot>
+                                <SchoolIcon/>
+                            </TimelineDot>
+                            {index < educationData.length - 1 && <TimelineConnector />}
+                        </TimelineSeparator>
+                        <TimelineContent sx={{ py: '12px', px: 2 }}>
+                            <Typography variant="h6" component="span" className="bg-clip-text text-transparent bg-gradient-to-r from-[#4895D1] to-[#78B1E5] font-bold">
+                                <a href={education.link} target="_blank" rel="noopener noreferrer">
+                                    {education.school}
+                                </a>
+                            </Typography>
+                            <Typography>{education.degree}, {education.duration}</Typography>
+                        </TimelineContent>
+                    </TimelineItem>
+                ))}
             </Timeline>
         </section>
     );
