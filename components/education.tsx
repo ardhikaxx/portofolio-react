@@ -11,31 +11,50 @@ import { educationData } from '@/data/educationData';
 
 export default function Education() {
     return (
-        <section className="bg-gray-100 relative py-5 z-10">
-            <div className="text-center">
-                <h1 className="text-3xl font-bold text-gray-800" data-aos="zoom-y-out">My Education</h1>
-                <p className="text-xl text-gray-600" data-aos="zoom-y-out" data-aos-delay="150">Here is a timeline of my educational journey</p>
+        <section className="bg-gray-100 py-10">
+            <div className="max-w-4xl mx-auto">
+                <div className="text-center">
+                    <h1 className="text-4xl font-extrabold text-gray-800" data-aos="zoom-y-out">
+                        My Education
+                    </h1>
+                    <p className="text-lg text-gray-600 mt-4" data-aos="zoom-y-out" data-aos-delay="150">
+                        A timeline of my educational achievements.
+                    </p>
+                </div>
+                <Timeline position="alternate"data-aos="fade-up" data-aos-delay="300">
+                    {educationData.map((education, index) => (
+                        <TimelineItem key={index}>
+                            <TimelineSeparator>
+                                <TimelineDot color="primary">
+                                    <SchoolIcon />
+                                </TimelineDot>
+                                {index < educationData.length - 1 && <TimelineConnector />}
+                            </TimelineSeparator>
+                            <TimelineContent>
+                                <div className="bg-white p-4 rounded-lg shadow-md">
+                                    <Typography
+                                        variant="h6"
+                                        component="span"
+                                        className="text-gray-800 font-semibold"
+                                    >
+                                        <a
+                                            href={education.link}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="text-blue-600 hover:underline"
+                                        >
+                                            {education.school}
+                                        </a>
+                                    </Typography>
+                                    <Typography className="text-gray-600 mt-2">
+                                        {education.degree}, {education.duration}
+                                    </Typography>
+                                </div>
+                            </TimelineContent>
+                        </TimelineItem>
+                    ))}
+                </Timeline>
             </div>
-            <Timeline position="alternate" className="mt-10" data-aos="zoom-y-out" data-aos-delay="150">
-                {educationData.map((education, index) => (
-                    <TimelineItem key={index}>
-                        <TimelineSeparator>
-                            <TimelineDot>
-                                <SchoolIcon/>
-                            </TimelineDot>
-                            {index < educationData.length - 1 && <TimelineConnector />}
-                        </TimelineSeparator>
-                        <TimelineContent sx={{ py: '12px', px: 2 }}>
-                            <Typography variant="h6" component="span" className="bg-clip-text text-transparent bg-gradient-to-r from-[#4895D1] to-[#78B1E5] font-bold">
-                                <a href={education.link} target="_blank" rel="noopener noreferrer">
-                                    {education.school}
-                                </a>
-                            </Typography>
-                            <Typography>{education.degree}, {education.duration}</Typography>
-                        </TimelineContent>
-                    </TimelineItem>
-                ))}
-            </Timeline>
         </section>
     );
 }
