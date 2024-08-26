@@ -58,6 +58,6 @@ export const projects = [
         image: Project6,
         languages: ['html', 'css', 'bootstrap', 'javascript'],
         link: "https://www.putrakjtrans.com/",
-        year: 2024
+        year: 2025
     },
 ]
