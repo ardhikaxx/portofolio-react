@@ -3,6 +3,7 @@ import Project2 from '@/public/images/project/projek2.png';
 import Project3 from '@/public/images/project/projek3.jpg';
 import Project4 from '@/public/images/project/projek4.png';
 import Project5 from '@/public/images/project/projek5.png';
+import Project6 from '@/public/images/project/projek6.png';
 
 export const projects = [
     {
@@ -49,5 +50,14 @@ export const projects = [
         languages: ['Figma'],
         link: "https://www.figma.com/design/g9MVWqKHGlAFkJ5xODqAWr/Website-Design---Nusa?node-id=0-1&t=mSwe1AlHmmMDIBQD-1",
         year: 2024
-    }    
+    },
+    {
+        id: 6,
+        name: "PutraKJ Trans",
+        description: "I created a website for a transportation company. The website displays information about the company's services, available fleets, and how to book.",
+        image: Project6,
+        languages: ['html', 'css', 'bootstrap', 'javascript'],
+        link: "https://www.putrakjtrans.com/",
+        year: 2024
+    },
 ]
