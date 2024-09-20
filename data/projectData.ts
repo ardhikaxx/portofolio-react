@@ -53,7 +53,7 @@ export const projects = [
     },
     {
         id: 6,
-        name: "PutraKJ Trans",
+        name: "Website Travel - PutraKJ Trans",
         description: "I created a website for a transportation company. The website displays information about the company's services, available fleets, and how to book.",
         image: Project6,
         languages: ['html', 'css', 'bootstrap', 'javascript'],
