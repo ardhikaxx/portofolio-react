@@ -4,6 +4,7 @@ import Project3 from '@/public/images/project/projek3.jpg';
 import Project4 from '@/public/images/project/projek4.png';
 import Project5 from '@/public/images/project/projek5.png';
 import Project6 from '@/public/images/project/projek6.png';
+import Project7 from '@/public/images/project/projek7.png';
 
 export const projects = [
     {
@@ -58,6 +59,15 @@ export const projects = [
         image: Project6,
         languages: ['html', 'css', 'bootstrap', 'javascript'],
         link: "https://www.putrakjtrans.com/",
+        year: 2024
+    },
+    {
+        id: 7,
+        name: "Website Profile - Kelompok Tani Kopi Sumber Kembang",
+        description: "I created a website for a transportation company. The website displays information about the company's services, available fleets, and how to book.",
+        image: Project7,
+        languages: ['html', 'css', 'bootstrap', 'javascript'],
+        link: "https://kopisumberkembang.my.id/",
         year: 2024
     },
 ]
