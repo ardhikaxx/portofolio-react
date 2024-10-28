@@ -63,7 +63,7 @@ export const projects = [
     },
     {
         id: 7,
-        name: "Website Profile - Kelompok Tani Kopi Sumber Kembang",
+        name: "Website - Kelompok Tani Kopi Sumber Kembang",
         description: "I created a website for a transportation company. The website displays information about the company's services, available fleets, and how to book.",
         image: Project7,
         languages: ['html', 'css', 'bootstrap', 'javascript'],
