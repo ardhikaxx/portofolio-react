@@ -10,7 +10,7 @@ import { toast } from 'react-toastify';
 export default function Header() {
 
   const handleDownload = () => {
-    const downloadUrl = '/pdf/cv-kreatif.pdf';
+    const downloadUrl = '/pdf/cv-ats.pdf';
     fetch(downloadUrl)
       .then(response => response.blob())
       .then(blob => {
