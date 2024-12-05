@@ -15,7 +15,7 @@ const DownloadButton: React.FC = () => {
                 const url = window.URL.createObjectURL(new Blob([blob]));
                 const link = document.createElement('a');
                 link.href = url;
-                link.setAttribute('download', 'cv-kreatif.pdf');
+                link.setAttribute('download', 'cv-ats.pdf');
                 document.body.appendChild(link);
                 link.click();
                 document.body.removeChild(link);
