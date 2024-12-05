@@ -61,7 +61,7 @@ export default function Profile() {
             <div className="relative flex flex-col items-center border-2 border-gray-200 rounded-lg bg-white shadow-lg p-8">
               <div className="absolute top-0 -mt-24">
                 <Image
-                  className="rounded-full border-4 border-white shadow-lg"
+                  className="rounded-full border-4 border-white shadow-lg grayscale-[50] hover:grayscale-0 transition-all duration-300 transform hover:scale-110"
                   src={ProfilImage}
                   width={195}
                   height={195}
@@ -71,7 +71,7 @@ export default function Profile() {
               </div>
               <div className="mt-20 text-center">
                 <blockquote className="text-lg font-medium mb-4 text-gray-700 leading-relaxed">
-                  “I am a Junior Web & Mobile Dev committed to creative innovation in the digital world. Currently, I am pursuing my D4 in Informatics Engineering at Politeknik Negeri Jember, where I continue to improve my technical skills and design expertise to add value to every project I create.“
+                  “Hello, I'm Yanuar Ardhika Rahmadhani Ubaidillah, a Junior Web & Mobile Developer passionate about combining technology and creativity to solve real-world challenges. I'm currently sharpening my skills in the Information Technology Department, Informatics Engineering (D4) at Politeknik Negeri Jember. With a strong background in web and mobile development, I’m eager to explore AI, IoT, and computer vision. I also enjoy designing intuitive user experiences and building efficient, scalable systems. Through my projects, I aim to deliver impactful solutions while staying up-to-date with the latest technology and design trends.“
                 </blockquote>
                 <cite className="block font-bold text-xl not-italic mb-1 text-gray-900">Yanuar Ardhika Rahmadhani Ubaidillah</cite>
                 <div className="text-gray-600 text-lg">
