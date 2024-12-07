@@ -11,7 +11,7 @@ export const projects = [
     {
         id: 1,
         name: 'Eat Well Analyzer Website',
-        description: 'I developed the Eat Well Analyzer website to help users check food nutrients. Despite the challenges of complex data processing and algorithm development, I overcame them with dedication and collaboration.',
+        description: 'I developed the Eat Well Analyzer website to assist users in analyzing food nutrients. This project involved tackling complex challenges related to data processing and algorithm development. By leveraging teamwork and dedication, the website successfully delivers a user-friendly interface for understanding nutritional information.',
         image: Project1,
         languages: ['html', 'tailwind', 'javascript'],
         link: 'https://eat-well-analyzer.vercel.app/',
@@ -20,7 +20,7 @@ export const projects = [
     {
         id: 2,
         name: 'Website-Based Posyandu Health Data Manager',
-        description: 'I developed a website for cadres or midwives to manage toddler posyandu health data for the final project of even semester 2024. Our team passed funding from the "Program Kreativitas Mahasiswa" (PKM).',
+        description: 'This project involved creating a web application for managing toddler health data at posyandus (community health posts). Designed for use by cadres and midwives, the platform streamlines data management for child growth, immunizations, and health records. This final project for the 2024 even semester was part of a team effort that secured funding through the Student Creativity Program (PKM).',
         image: Project2,
         languages: ['html', 'css', 'bootstrap', 'php', 'laravel', 'javascript'],
         link: 'https://youtu.be/ouWihtoRrXQ?si=i9-c8RCqJMOmwfLo',
@@ -28,8 +28,8 @@ export const projects = [
     },
     {
         id: 3,
-        name: 'Mobile-based Posyandu Health Data Manager',
-        description: 'I developed a mobile app for parents to manage toddler posyandu health data for the final project of even semester 2024. Our team passed funding from the "Program Kreativitas Mahasiswa" (PKM).',
+        name: 'Mobile-Based Posyandu Health Data Manager',
+        description: 'This mobile application complements the web-based Posyandu Health Data Manager, allowing parents to easily track their children’s health records, growth, and immunization history. Developed as part of the final project for the 2024 even semester, this initiative also received funding from the Student Creativity Program (PKM).',
         image: Project3,
         languages: ['android studio', 'dart', 'flutter'],
         link: 'https://youtu.be/ouWihtoRrXQ?si=i9-c8RCqJMOmwfLo',
@@ -37,17 +37,17 @@ export const projects = [
     },
     {
         id: 4,
-        name: 'Website PKM RAYA 2024',
-        description: '',
+        name: 'Website PKM - PM 2024',
+        description: 'This website supports the 2024 PKM project by providing resources related to the Health Data Management Information System for Posyandu. Users can access mobile app downloads, explore the web app features for managing child data, and view photo documentation of project activities. Designed for healthcare workers, cadres, and parents in Kp. Gudang, Situbondo, the system improves child health management efficiency.',
         image: Project4,
-        languages: ['html','bootstrap', 'javascript'],
+        languages: ['html', 'bootstrap', 'javascript'],
         link: 'https://web-app-posyandu.vercel.app/',
         year: 2024
     },
     {
         id: 5,
         name: 'Website Card Monument',
-        description: 'I created a website to introduce the history of Bondowoso, East Java, focusing on the Gerbong Maut incident during Dutch colonization.',
+        description: 'I designed this website to preserve the history of Bondowoso, East Java, with a focus on the Gerbong Maut tragedy during the Dutch colonial era. This project combines historical storytelling with a visually engaging layout to educate and commemorate.',
         image: Project5,
         languages: ['html', 'css', 'javascript'],
         link: 'https://monumen-gerbong-maut.vercel.app/',
@@ -55,29 +55,29 @@ export const projects = [
     },
     {
         id: 6,
-        name: "Web Design - Nusa Bus and Nusa Rent",
-        description: "I created a website design for Nusa Bus and Nusa Rent, which aims to introduce transportation and vehicle rental services. The website displays information about the various types of services, available fleets, and how to book.",
+        name: 'Web Design - Nusa Bus and Nusa Rent',
+        description: 'This project involved creating a detailed web design for Nusa Bus and Nusa Rent, showcasing their transportation and rental services. The design highlights the fleet, service options, and booking process with a focus on user experience and visual appeal.',
         image: Project6,
         languages: ['Figma'],
-        link: "https://www.figma.com/design/g9MVWqKHGlAFkJ5xODqAWr/Website-Design---Nusa?node-id=0-1&t=mSwe1AlHmmMDIBQD-1",
+        link: 'https://www.figma.com/design/g9MVWqKHGlAFkJ5xODqAWr/Website-Design---Nusa?node-id=0-1&t=mSwe1AlHmmMDIBQD-1',
         year: 2024
     },
     {
         id: 7,
-        name: "Website Travel - PutraKJ Trans",
-        description: "I created a website for a transportation company. The website displays information about the company's services, available fleets, and how to book.",
+        name: 'Website Travel - PutraKJ Trans',
+        description: 'I developed a website for PutraKJ Trans, a transportation company, to enhance their online presence. The site includes detailed information about services, fleet options, and an intuitive booking process, helping to connect clients with reliable transportation solutions.',
         image: Project7,
         languages: ['html', 'css', 'bootstrap', 'javascript'],
-        link: "https://www.putrakjtrans.com/",
+        link: 'https://www.putrakjtrans.com/',
         year: 2024
     },
     {
         id: 8,
-        name: "Website - Kelompok Tani Kopi Sumber Kembang",
-        description: "I created a website for a transportation company. The website displays information about the company's services, available fleets, and how to book.",
+        name: 'Website - Kelompok Tani Kopi Sumber Kembang',
+        description: 'This website was designed for Kelompok Tani Kopi Sumber Kembang to promote their coffee farming practices and products. The platform provides insights into the community’s activities, sustainable farming efforts, and the high-quality coffee they produce.',
         image: Project8,
         languages: ['html', 'css', 'bootstrap', 'javascript'],
-        link: "https://kopisumberkembang.my.id/",
+        link: 'https://kopisumberkembang.my.id/',
         year: 2024
-    },
-]
+    }
+];
