@@ -1,13 +1,13 @@
 export const penghargaanData = [
     {
-        namaPenghargaan: 'Siswa Terbaik Kompetensi Keahlian Teknik Elektronika Industri',
-        tahun: '2022',
-        penyelenggara: 'Kepala SMKN 3 Bondowoso',
-    },
-    {
         namaPenghargaan: 'Juara 3 Bidang Teknologi Inovasi Pemuda Pelopor Tingkat Kabupaten Bondowoso',
         tahun: '2021',
         penyelenggara: 'Kepala Dinas Pariwisata, Kebudayaan, Pemuda, dan Olahraga Kabupaten Bondowoso',
+    },
+    {
+        namaPenghargaan: 'Siswa Terbaik Kompetensi Keahlian Teknik Elektronika Industri',
+        tahun: '2022',
+        penyelenggara: 'Kepala SMKN 3 Bondowoso',
     },
     {
         namaPenghargaan: 'Juara 1 Poster Semester 3 TIF EXHIBITION Program Studi Teknik Informatika',
@@ -17,7 +17,7 @@ export const penghargaanData = [
     {
         namaPenghargaan: 'Juara 3 Lomba kategori Digital Poster "Explant Competition"',
         tahun: '2023',
-        penyelenggara: 'Ketua UKM Explant',
+        penyelenggara: 'Ketua UKM (Unit Kegiatan Mahasiswa) Explant',
     },
     {
         namaPenghargaan: 'Lolos Pendanaan PKM (Program Kreativitas Mahasiswa)',
@@ -35,7 +35,7 @@ export const penghargaanData = [
         penyelenggara: 'Ketua Jurusan Teknologi Informasi',
     },
     {
-        namaPenghargaan: 'Juara 1 Water Innovation Challenge #3',
+        namaPenghargaan: 'Juara 1 WIC (Water Innovation Challenge) #3',
         tahun: '2024',
         penyelenggara: 'Perumdam Tirta Pandalungan Jember',
     },

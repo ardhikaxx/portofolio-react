@@ -5,7 +5,6 @@ import Project4 from '@/public/images/project/projek4.png';
 import Project5 from '@/public/images/project/projek5.png';
 import Project6 from '@/public/images/project/projek6.png';
 import Project7 from '@/public/images/project/projek7.png';
-import Project8 from '@/public/images/project/projek8.png';
 
 export const projects = [
     {
@@ -55,27 +54,18 @@ export const projects = [
     },
     {
         id: 6,
-        name: 'Web Design - Nusa Bus and Nusa Rent',
-        description: 'This project involved creating a detailed web design for Nusa Bus and Nusa Rent, showcasing their transportation and rental services. The design highlights the fleet, service options, and booking process with a focus on user experience and visual appeal.',
-        image: Project6,
-        languages: ['Figma'],
-        link: 'https://www.figma.com/design/g9MVWqKHGlAFkJ5xODqAWr/Website-Design---Nusa?node-id=0-1&t=mSwe1AlHmmMDIBQD-1',
-        year: 2024
-    },
-    {
-        id: 7,
         name: 'Website Travel - PutraKJ Trans',
         description: 'I developed a website for PutraKJ Trans, a transportation company, to enhance their online presence. The site includes detailed information about services, fleet options, and an intuitive booking process, helping to connect clients with reliable transportation solutions.',
-        image: Project7,
+        image: Project6,
         languages: ['html', 'css', 'bootstrap', 'javascript'],
         link: 'https://www.putrakjtrans.com/',
         year: 2024
     },
     {
-        id: 8,
+        id: 7,
         name: 'Website - Kelompok Tani Kopi Sumber Kembang',
         description: 'This website was designed for Kelompok Tani Kopi Sumber Kembang to promote their coffee farming practices and products. The platform provides insights into the community’s activities, sustainable farming efforts, and the high-quality coffee they produce.',
-        image: Project8,
+        image: Project7,
         languages: ['html', 'css', 'bootstrap', 'javascript'],
         link: 'https://kopisumberkembang.my.id/',
         year: 2024
