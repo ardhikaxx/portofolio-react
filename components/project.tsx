@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
-import { LinkPreview } from "@/components/interface/link-preview";
+import { LinkPreview } from "@/components/ui/link-preview";
 import { projects } from '@/data/projectData';
 
 const icons: any = {

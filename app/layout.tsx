@@ -1,7 +1,7 @@
 import React from 'react';
 import './css/style.css';
 import { Inter } from 'next/font/google';
-import Header from '@/components/interface/header';
+import Header from '@/components/ui/header';
 import 'react-toastify/dist/ReactToastify.css';
 import 'slick-carousel/slick/slick.css'; 
 import 'slick-carousel/slick/slick-theme.css';
