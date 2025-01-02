@@ -5,6 +5,7 @@ import Project4 from '@/public/images/project/projek4.png';
 import Project5 from '@/public/images/project/projek5.png';
 import Project6 from '@/public/images/project/projek6.png';
 import Project7 from '@/public/images/project/projek7.png';
+import Project8 from '@/public/images/project/projek8.png';
 
 export const projects = [
     {
@@ -68,6 +69,15 @@ export const projects = [
         image: Project7,
         languages: ['html', 'css', 'bootstrap', 'javascript'],
         link: 'https://kopisumberkembang.my.id/',
+        year: 2024
+    },
+    {
+        id: 8,
+        name: 'Website Omeo AI - Edukasi Interaktif',
+        description: 'This website provides educational content on Omeo AI, an AI-based platform for educational purposes. It serves as a platform to educate users about the AI-based platform and its features. The website is built using HTML, Tailwind CSS, Node.js, and JavaScript. The website is currently in development and is expected to be completed in 2024.',
+        image: Project8,
+        languages: ['html', 'tailwind', 'node.js', 'javascript'],
+        link: 'https://omeo-ai.vercel.app/',
         year: 2024
     }
 ];
