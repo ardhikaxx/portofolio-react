@@ -1,6 +1,6 @@
 export const metadata = {
   title: 'Portofolio - ARDHIKA',
-  description: 'Page description',
+  description: 'Selamat datang di portofolio ARDHIKA. Jelajahi karya, pengalaman, dan proyek inovatif dalam pengembangan web, mobile, serta desain grafis yang kreatif dan solutif.',
 }
 
 import Hero from '@/components/hero'

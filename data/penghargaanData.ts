@@ -20,7 +20,7 @@ export const penghargaanData = [
         penyelenggara: 'Ketua UKM (Unit Kegiatan Mahasiswa) Explant',
     },
     {
-        namaPenghargaan: 'Lolos Pendanaan PKM (Program Kreativitas Mahasiswa)',
+        namaPenghargaan: 'Lolos Pendanaan PKM (Program Kreativitas Mahasiswa) - Bidang Pengabdian Masyarakat',
         tahun: '2024',
         penyelenggara: 'Ditjen Diktiristek',
     },
