@@ -41,6 +41,7 @@ import Project40 from '@/public/images/certificate/40.jpg';
 import Project41 from '@/public/images/certificate/41.jpg';
 import Project42 from '@/public/images/certificate/42.png';
 import Project43 from '@/public/images/certificate/43.jpg';
+import Project44 from '@/public/images/certificate/44.jpg';
 
 export const certificates = [
     {
@@ -255,7 +256,12 @@ export const certificates = [
     },
     {
         id: 43,
-        name: 'Kepanitian Dialog Pimpinan & Sosialisasi PTNBH 2024',
+        name: 'Kepanitian Dialog Pimpinan & Sosialisasi PTNBH 2024 - Sie PDD',
         image: Project43,
+    },
+    {
+        id: 44,
+        name: 'Kepanitian Festival Seni Pertunjukan Ikamada x KM Awards 2024 - CO Sie PDD',
+        image: Project44,
     },
 ];
