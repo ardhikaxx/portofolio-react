@@ -71,11 +71,9 @@ Here are some awards and recognitions I've received:
 
 ---
 
----
-
 ## 📞 Contact Me
 Feel free to connect with me:
-- **Email**: yanuar@example.com
+- **Email**: ardhikayanuar58@gmail.com
 - **Website**: [yanuar-ardhika.vercel.app](https://yanuar-ardhika.vercel.app/)
 - **Instagram**: [ardhkkaa_](https://www.instagram.com/ardhkkaa_/)
 
