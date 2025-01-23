@@ -51,7 +51,7 @@ const icons: any = {
   'next.js': (
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" width="20" height="20" alt="nextjs logo" loading='lazy' />
   ),
-  Figma : (
+  Figma: (
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" width="20" height="20" alt="figma logo" loading='lazy' />
   ),
 }
@@ -76,8 +76,8 @@ export default function Project() {
   return (
     <section className="bg-gray-100 relative py-10">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="text-center mb-12">
-          <h1 className="text-3xl font-bold text-gray-800" data-aos="zoom-y-out">My Project</h1>
+        <div className="text-center mb-12 flex flex-col justify-center items-center">
+          <h1 className="text-3xl font-bold text-gray-800" data-aos="zoom-y-out">My Projects</h1>
           <p className="text-xl text-gray-600" data-aos="zoom-y-out" data-aos-delay="150">Here are some of the projects I have worked on.</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8" data-aos="zoom-y-out" data-aos-delay="150">
