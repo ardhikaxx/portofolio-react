@@ -52,14 +52,14 @@ Here are some of the highlighted projects that represent my work:
 
 ## 🏆 Achievements & Awards
 
-- 🥉 **3rd Place - Innovation Technology, Pemuda Pelopor (Bondowoso)** – 2021  
-- 🥇 **Best Student in Industrial Electronics Engineering** – SMKN 3 Bondowoso, 2022  
-- 🥇 **1st Place - Poster Design, TIF EXHIBITION (Semester 3)** – 2023  
-- 🥉 **3rd Place - Digital Poster, Explant Competition** – 2023  
-- ✅ **PKM Grant Recipient (Community Service Program)** – Diktiristek, 2024  
-- 🥇 **1st Place - Web & Mobile App, TIF EXHIBITION (Semester 4)** – 2024  
-- 🥇 **1st Place - Creative Demo Video, TIF EXHIBITION (Semester 4)** – 2024  
-- 🥇 **1st Place - Water Innovation Challenge (WIC) #3** – Perumdam Tirta Pandalungan Jember, 2024
+- 🥉 **Juara 3 Bidang Teknologi Inovasi Pemuda Pelopor Tingkat Kabupaten Bondowoso** – Kepala Dinas Pariwisata, Kebudayaan, Pemuda, dan Olahraga Kabupaten Bondowoso, 2021  
+- 🥇 **Siswa Terbaik Kompetensi Keahlian Teknik Elektronika Industri** – Kepala SMKN 3 Bondowoso, 2022  
+- 🥇 **Juara 1 Poster Semester 3 TIF EXHIBITION Program Studi Teknik Informatika** – Ketua Jurusan Teknologi Informasi, 2023  
+- 🥉 **Juara 3 Lomba kategori Digital Poster "Explant Competition"** – Ketua UKM (Unit Kegiatan Mahasiswa) Explant, 2023
+- 🏅 **Lolos Pendanaan PKM (Program Kreativitas Mahasiswa)- Pengabdian Masyarakat** – Ditjen Diktiristek, 2024
+- 🥇 **Juara 1 Aplikasi Website dan Mobile Semester 4 TIF EXHIBITION Program Studi Teknik Informatika** – Ketua Jurusan Teknologi Informasi, 2024
+- 🥇 **Juara 1 Video Demo Kreatif Semester 4 TIF EXHIBITION Program Studi Teknik Informatika** – Ketua Jurusan Teknologi Informasi, 2024
+- 🥇 **Juara 1 WIC (Water Innovation Challenge) #3** – Perumdam Tirta Pandalungan Jember, 2024
 
 ---
 
