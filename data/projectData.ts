@@ -7,6 +7,7 @@ import Project6 from '@/public/images/project/projek6.png';
 import Project7 from '@/public/images/project/projek7.png';
 import Project8 from '@/public/images/project/projek8.png';
 import Project9 from '@/public/images/project/projek9.png';
+import Project10 from '@/public/images/project/projek10.png';
 
 export const projects = [
     {
@@ -88,6 +89,15 @@ export const projects = [
         languages : ['html', 'css', 'tailwind', 'javascript'],
         image: Project9,
         link: 'https://egg-timer-eight.vercel.app/',
+        year: 2025
+    },
+    {
+        id: 10,
+        name: 'Website AITeC ke VII 2025 - Politeknik Negeri Jember',
+        description: 'I developed a website for the 7th Agricultural Innovation Technology Competition (AITeC) 2025, hosted by Politeknik Negeri Jember. This website was built using HTML, Tailwind CSS, and JavaScript. My role focused on creating the front-end interface, ensuring a responsive and user-friendly experience.',
+        image: Project10,
+        languages: ['html', 'css', 'tailwind', 'javascript'],
+        link: 'https://dev-aitec-2025.vercel.app/',
         year: 2025
     }
 ];
