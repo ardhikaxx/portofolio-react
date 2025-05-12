@@ -77,8 +77,8 @@ export const projects = [
     },
     {
         id: 8,
-        name: 'Website Omeo AI - Edukasi Interaktif',
-        description: 'This website provides educational content on Omeo AI, an AI-based platform for educational purposes. It serves as a platform to educate users about the AI-based platform and its features. The website is built using HTML, Tailwind CSS, Node.js, and JavaScript. The website is currently in development and is expected to be completed in 2024.',
+        name: 'Website Omeo AI - Interactive Education',
+        description: 'This website provides educational content about Omeo AI, an AI-based platform for learning. It explains the platform’s features and functionality. Built using HTML, Tailwind CSS, Node.js, and JavaScript, the site is still under development and expected to be completed in 2024.',
         image: Project8,
         languages: ['html', 'tailwind', 'node.js', 'javascript'],
         link: 'https://omeo-ai.vercel.app/',
@@ -87,9 +87,9 @@ export const projects = [
     {
         id: 9,
         name: 'Website EGG TIMER - Perfect Eggs Every Time!',
-        description: 'This website provides educational content on Omeo AI, an AI-based platform for educational purposes. It serves as a platform to educate users about the AI-based platform and its features. The website is built using HTML, Tailwind CSS, Node.js, and JavaScript. The website is currently in development and is expected to be completed in 2024.',
-        languages : ['html', 'css', 'tailwind', 'javascript'],
+        description: 'This website is designed to help users cook eggs perfectly every time. It includes interactive timers and guides for different types of egg preparations. Built using HTML, Tailwind CSS, and JavaScript.',
         image: Project9,
+        languages: ['html', 'css', 'tailwind', 'javascript'],
         link: 'https://egg-timer-eight.vercel.app/',
         year: 2025
     },
@@ -113,7 +113,7 @@ export const projects = [
     },
     {
         id: 12,
-        name: 'Website AITeC ke VII 2025 - Politeknik Negeri Jember',
+        name: 'Website AITeC VII 2025 - Politeknik Negeri Jember',
         description: 'I developed a website for the 7th Agricultural Innovation Technology Competition (AITeC) 2025, hosted by Politeknik Negeri Jember. This website was built using HTML, Tailwind CSS, and JavaScript. My role focused on creating the front-end interface, ensuring a responsive and user-friendly experience.',
         image: Project12,
         languages: ['html', 'css', 'tailwind', 'javascript'],
