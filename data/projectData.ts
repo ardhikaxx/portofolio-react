@@ -8,6 +8,8 @@ import Project7 from '@/public/images/project/projek7.png';
 import Project8 from '@/public/images/project/projek8.png';
 import Project9 from '@/public/images/project/projek9.png';
 import Project10 from '@/public/images/project/projek10.png';
+import Project11 from '@/public/images/project/projek11.png';
+import Project12 from '@/public/images/project/projek12.png';
 
 export const projects = [
     {
@@ -93,9 +95,27 @@ export const projects = [
     },
     {
         id: 10,
+        name: 'GlucoWise Web Demo and Mobile App Showcase',
+        description: 'I created this website to showcase a demo of the GlucoWise application developed by my team. The platform allows general users to download and install the mobile app directly from the site. Built using HTML, CSS, Bootstrap, and JavaScript, this website serves as an informative hub that explains what GlucoWise is—an innovative web-based data management and diabetes education application designed for healthcare professionals, as well as a mobile solution tailored for the general public.',
+        image: Project10,
+        languages: ['html', 'css', 'bootstrap', 'javascript'],
+        link: 'https://glucowise-app.vercel.app/',
+        year: 2025
+    },
+    {
+        id: 11,
+        name: 'Glucozia AI - Interactive Diabetes Education Chatbot',
+        description: 'I developed the Glucozia AI website, an interactive chatbot powered by artificial intelligence designed to provide personalized diabetes education. This tool offers users real-time assistance, health analysis, and tailored advice through a responsive chat interface. It was built using HTML, CSS, Tailwind CSS, and JavaScript, ensuring a sleek and modern user experience. Glucozia acts as a virtual assistant, available 24/7 to help users understand diabetes, monitor their health status, and receive nutritional recommendations based on their individual needs.',
+        image: Project11,
+        languages: ['html', 'css', 'tailwind', 'javascript'],
+        link: 'https://dev-aitec-2025.vercel.app/',
+        year: 2025
+    },
+    {
+        id: 12,
         name: 'Website AITeC ke VII 2025 - Politeknik Negeri Jember',
         description: 'I developed a website for the 7th Agricultural Innovation Technology Competition (AITeC) 2025, hosted by Politeknik Negeri Jember. This website was built using HTML, Tailwind CSS, and JavaScript. My role focused on creating the front-end interface, ensuring a responsive and user-friendly experience.',
-        image: Project10,
+        image: Project12,
         languages: ['html', 'css', 'tailwind', 'javascript'],
         link: 'https://dev-aitec-2025.vercel.app/',
         year: 2025
