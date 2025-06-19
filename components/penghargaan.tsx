@@ -4,20 +4,14 @@ import { penghargaanData } from '@/data/penghargaanData';
 const Awards = () => {
     return (
         <section className="relative py-20 bg-gradient-to-b from-gray-50 to-white">
-            <div className="absolute inset-0 overflow-hidden opacity-10">
-                <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"></div>
-            </div>
 
             <div className="max-w-7xl mx-auto px-5 sm:px-10">
                 <div className="text-center mb-16">
-                    <span className="inline-block mb-4 text-sm font-medium py-1 px-3 rounded-full bg-blue-100 text-blue-600">
-                        Achievements
-                    </span>
                     <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 bg-clip-text">
-                        Awards & Recognition
+                        My Awards
                     </h1>
                     <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                        Professional accolades that highlight my dedication and excellence in the field.
+                        Here are some of the awards I have received for my work.
                     </p>
                 </div>
 
@@ -25,7 +19,7 @@ const Awards = () => {
                     {penghargaanData.map((item, index) => (
                         <div
                             key={index}
-                            className="relative group overflow-hidden rounded-2xl bg-white border border-gray-200 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+                            className="relative group overflow-hidden rounded-2xl bg-white border border-gray-200 shadow-sm hover:shadow-lg transition-all duration-500 hover:-translate-y-1"
                             data-aos="fade-up"
                             data-aos-delay={index * 50}
                         >
@@ -34,22 +28,22 @@ const Awards = () => {
                             <div className="relative p-6 h-full flex flex-col z-10">
                                 <div className="mb-5">
                                     <div className="w-14 h-14 rounded-xl bg-blue-100 flex items-center justify-center mb-4">
-                                        <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                                        <svg className="h-8" fill="#4895D1" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24">
+                                            <path d="m21.95,5.551l-3.485-3.485C17.143.743,15.385.015,13.515.015h-4.515C6.727.015,4.737,1.55,4.163,3.747c-.14.534.18,1.081.714,1.221.538.137,1.082-.181,1.22-.715.345-1.317,1.539-2.238,2.903-2.238h4.515c.165,0,.323.032.485.047v4.953c0,1.654,1.346,3,3,3h4.951c.016.162.049.322.049.485v8.515c0,1.654-1.346,3-3,3h-10c-.69,0-1.338-.228-1.875-.657-.43-.343-1.059-.276-1.406.154-.345.432-.276,1.061.155,1.406.882.707,1.992,1.097,3.125,1.097h10c2.757,0,5-2.243,5-5v-8.515c0-1.869-.728-3.627-2.05-4.949Zm-4.95,2.464c-.551,0-1-.448-1-1V2.698c.376.217.735.466,1.05.781l3.485,3.485c.311.311.559.672.776,1.05h-4.312Zm-7,7.985h8c.552,0,1,.447,1,1s-.448,1-1,1h-8c-.552,0-1-.447-1-1s.448-1,1-1Zm-3,2.847v-4.75c.907-.734,1.5-1.842,1.5-3.097,0-2.206-1.794-4-4-4S.5,8.794.5,11c0,1.255.593,2.363,1.5,3.097v4.75c0,.623.791.89,1.169.395l1.331-1.743,1.331,1.743c.378.495,1.169.228,1.169-.395Zm-2.5-9.847c1.103,0,2,.897,2,2s-.897,2-2,2-2-.897-2-2,.897-2,2-2Zm6.5,5c-.552,0-1-.447-1-1s.448-1,1-1h7c.552,0,1,.447,1,1s-.448,1-1,1h-7Z" />
                                         </svg>
                                     </div>
 
-                                    <h3 className="text-xl font-bold text-gray-900 mb-2">
+                                    <h3 className="text-lg font-bold text-gray-900 mb-2">
                                         {item.namaPenghargaan}
                                     </h3>
-                                    <p className="text-gray-600 line-clamp-2">{item.penyelenggara}</p>
+                                    <p className="text-gray-600 text-sm">{item.penyelenggara}</p>
                                 </div>
 
                                 <div className="mt-auto pt-5 border-t border-gray-100 group-hover:border-blue-100 transition-colors flex justify-between items-center">
-                                    <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-semibold bg-blue-100 text-blue-600">
+                                    <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-semibold bg-blue-100 text-[#4895D1]">
                                         {item.tahun}
                                     </span>
-                                    <span className="text-sm font-semibold py-1 px-3 rounded-full bg-blue-100 text-blue-600">
+                                    <span className="text-sm font-semibold py-1 px-3 rounded-full bg-blue-100 text-[#4895D1]">
                                         Achievements
                                     </span>
                                 </div>
