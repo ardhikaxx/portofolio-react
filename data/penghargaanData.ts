@@ -39,4 +39,14 @@ export const penghargaanData = [
         tahun: '2024',
         penyelenggara: 'Perumdam Tirta Pandalungan Jember',
     },
+    {
+        namaPenghargaan: 'Juara 1 Aplikasi Terbaik Semester 6 TIF EXHIBITION Program Studi Teknik Informatika',
+        tahun: '2025',
+        penyelenggara: 'Ketua Jurusan Teknologi Informasi',
+    },
+    {
+        namaPenghargaan: 'Juara 1 Video Terbaik Semester 6 TIF EXHIBITION Program Studi Teknik Informatika',
+        tahun: '2025',
+        penyelenggara: 'Ketua Jurusan Teknologi Informasi',
+    },
 ];  

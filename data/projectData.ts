@@ -10,6 +10,7 @@ import Project9 from '@/public/images/project/projek9.png';
 import Project10 from '@/public/images/project/projek10.png';
 import Project11 from '@/public/images/project/projek11.png';
 import Project12 from '@/public/images/project/projek12.png';
+import { link } from 'fs';
 
 export const projects = [
     {
@@ -119,5 +120,13 @@ export const projects = [
         languages: ['html', 'css', 'tailwind', 'javascript'],
         link: 'https://dev-aitec-2025.vercel.app/',
         year: 2025
-    }
+    },
+    // {
+    //     id: 13,
+    //     name: '',
+    //     description: '',
+    //     image: Project12,
+    //     link: '',
+    //     year: 2025
+    // }
 ];
