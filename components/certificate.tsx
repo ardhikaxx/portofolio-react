@@ -74,11 +74,11 @@ export default function Certificate() {
     };
 
     return (
-        <section className="bg-gray-100 py-10">
+        <section className="dark:bg-gray-900 py-10">
             <div className="max-w-6xl mx-auto px-4 sm:px-6">
                 <div className="text-center mb-12">
-                    <h1 className="text-3xl font-bold text-gray-800" data-aos="zoom-y-out">My Certificates</h1>
-                    <p className="text-xl text-gray-600" data-aos="zoom-y-out" data-aos-delay="150">Here are some of the certificates I have received in recognition of my achievements.</p>
+                    <h1 className="text-3xl font-bold text-white" data-aos="zoom-y-out">My Certificates</h1>
+                    <p className="text-xl text-gray-300" data-aos="zoom-y-out" data-aos-delay="150">Here are some of the certificates I have received in recognition of my achievements.</p>
                 </div>
                 <Slider {...settings}>
                     {certificates.map((certificate: { id?: any; image: any; name: any; }) => (
@@ -111,7 +111,7 @@ export default function Certificate() {
                             animate={{ scale: 1, opacity: 1, transition: { type: 'spring', stiffness: 300, damping: 30 } }}
                             exit={{ scale: 0.8, opacity: 0, transition: { duration: 0.3, ease: 'easeInOut' } }}
                         >
-                            <button onClick={closeModal} className="absolute top-3 right-3 w-10 h-10 flex items-center justify-center rounded-full bg-gradient-to-r from-[#4895D1] to-[#78B1E5] text-white text-xl">
+                            <button onClick={closeModal} className="absolute top-3 right-3 w-10 h-10 flex items-center justify-center rounded-full bg-gradient-to-r from-[#E02435] to-[#B51D2A]] text-white text-xl">
                                 <FontAwesomeIcon icon={faTimes} />
                             </button>
                             <Image

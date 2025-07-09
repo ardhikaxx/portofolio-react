@@ -6,11 +6,11 @@ import { faInstagram, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-
 
 export default function Profile() {
   return (
-    <section className="bg-gray-100 relative py-5 z-10">
+    <section className="dark:bg-gray-900 relative py-5 z-10">
       <div className="absolute left-1/2 transform -translate-x-1/2 bottom-0 pointer-events-none -mb-32" aria-hidden="true">
         <svg width="1760" height="518" viewBox="0 0 1760 518" xmlns="http://www.w3.org/2000/svg">
           <defs>
-          <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="illustration-01">
+            <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="illustration-01">
               <stop stopColor="#B4D6E9" offset="0%" />
               <stop stopColor="#78B1E5" offset="50%" />
               <stop stopColor="#4895D1" offset="100%" />
@@ -25,8 +25,8 @@ export default function Profile() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="py-12 md:py-20">
           <div className="mx-auto text-center pb-5 md:pb-6">
-            <h2 className="text-3xl font-bold text-gray-800" data-aos="zoom-y-out">Apps I Frequently Use</h2>
-            <p className="text-gray-600" data-aos="zoom-y-out">These are the apps I frequently use for daily development and design projects.</p>
+            <h2 className="text-3xl font-bold text-white" data-aos="zoom-y-out">Apps I Frequently Use</h2>
+            <p className="text-gray-300" data-aos="zoom-y-out">These are the apps I frequently use for daily development and design projects.</p>
           </div>
           <div className="max-w-sm md:max-w-1xl mx-auto grid gap-5 grid-cols-4 md:grid-cols-5" data-aos="zoom-y-out" data-aos-delay="250">
             <div className="flex items-center justify-center py-2 col-span-1 md:col-auto">
@@ -48,7 +48,9 @@ export default function Profile() {
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width={55} height={55} alt="git logo" loading="lazy" />
             </div>
             <div className="flex items-center justify-center py-2 col-span-1 md:col-auto">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width={55} height={55} alt="github logo" loading="lazy" />
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width={55}height={55} alt="github logo" loading="lazy" className="filter invert"
+              />
             </div>
             <div className="flex items-center justify-center py-2 col-span-1 md:col-auto">
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg" width={55} height={55} alt="trello logo" loading="lazy" />

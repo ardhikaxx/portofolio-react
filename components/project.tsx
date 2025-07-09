@@ -74,11 +74,11 @@ export default function Project() {
   const [tab, setTab] = useState<number>(1)
 
   return (
-    <section className="bg-gray-100 relative py-10">
+    <section className="dark:bg-gray-900 relative py-10">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-12 flex flex-col justify-center items-center">
-          <h1 className="text-3xl font-bold text-gray-800" data-aos="zoom-y-out">My Projects</h1>
-          <p className="text-xl text-gray-600" data-aos="zoom-y-out" data-aos-delay="150">Here are some of the projects I have worked on.</p>
+          <h1 className="text-3xl font-bold text-white" data-aos="zoom-y-out">My Projects</h1>
+          <p className="text-xl text-gray-300" data-aos="zoom-y-out" data-aos-delay="150">Here are some of the projects I have worked on.</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8" data-aos="zoom-y-out" data-aos-delay="150">
           {projects.map(project => (
@@ -103,7 +103,7 @@ export default function Project() {
                 <p className="text-gray-600 mb-4">
                   {expandedProject === project.id ? project.description : getShortDescription(project.description)}
                   {project.description.length > maxLength && (
-                    <span onClick={() => toggleDescription(project.id)} className="text-blue-500 cursor-pointer">
+                    <span onClick={() => toggleDescription(project.id)} className="text-[#B51D2A] cursor-pointer">
                       {expandedProject === project.id ? ' Show Less' : ' View All'}
                     </span>
                   )}
@@ -118,7 +118,7 @@ export default function Project() {
                 </div>
                 <LinkPreview
                   url={project.link}
-                  className="inline-block px-5 py-2 bg-gradient-to-r from-[#4895D1] to-[#78B1E5] text-white text-sm font-semibold rounded-full shadow-lg hover:bg-blue-600 transition duration-300"
+                  className="inline-block px-5 py-2 bg-gradient-to-r from-[#B51D2A] to-[#E02435] text-white text-sm font-semibold rounded-full shadow-lg hover:bg-blue-600 transition duration-300"
                 >
                   View Project
                 </LinkPreview>

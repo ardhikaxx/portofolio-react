@@ -1,11 +1,11 @@
 export default function Skill() {
   return (
-    <section className="bg-gray-100 relative py-10">
+    <section className="dark:bg-gray-900 relative py-10">
       <div className="relative max-w-6xl mx-auto px-4 mt-5 sm:px-6 mb-10">
         <div className="pt-5 md:pt-10">
           <div className="max-w-3xl text-center mx-auto pb-5 md:pb-16">
-            <h1 className="text-3xl font-bold text-gray-800" data-aos="zoom-y-out">My Skill</h1>
-            <p className="text-xl text-gray-600" data-aos="zoom-y-out" data-aos-delay="150">I excel in problem solving, teamwork, and quick adaptation to cutting-edge technology, utilizing the latest tools in my software development projects.</p>
+            <h1 className="text-3xl font-bold text-white" data-aos="zoom-y-out">My Skill</h1>
+            <p className="text-xl text-gray-300" data-aos="zoom-y-out" data-aos-delay="150">I excel in problem solving, teamwork, and quick adaptation to cutting-edge technology, utilizing the latest tools in my software development projects.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8" data-aos="zoom-y-out" data-aos-delay="250">
             <div className="bg-white shadow-lg rounded-xl overflow-hidden">
@@ -29,9 +29,9 @@ export default function Skill() {
                   <SkillIcon src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB logo" />
                 </div>
                 <div className="flex justify-center items-center mt-5">
-                  <div className="bg-blue-50 text-blue-600 text-sm font-bold px-4 py-2 rounded-full">
+                  <div className="bg-[#B51D2A] bg-opacity-10 text-[#B51D2A] text-sm font-bold px-4 py-2 rounded-full">
                     <span className="mr-2">Skill Level :</span>
-                    <span className="bg-blue-100 text-blue-600 px-3 py-1 rounded-full">Beginner</span>
+                    <span className="bg-[#B51D2A] bg-opacity-10 text-[#B51D2A] px-3 py-1 rounded-full">Beginner</span>
                   </div>
                 </div>
               </div>
@@ -52,9 +52,9 @@ export default function Skill() {
                   <SkillIcon src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg" alt="GraphQL logo" />
                 </div>
                 <div className="flex justify-center items-center mt-5">
-                  <div className="bg-blue-50 text-blue-600 text-sm font-bold px-4 py-2 rounded-full">
+                  <div className="bg-[#B51D2A] bg-opacity-10 text-[#B51D2A] text-sm font-bold px-4 py-2 rounded-full">
                     <span className="mr-2">Skill Level :</span>
-                    <span className="bg-blue-100 text-blue-600 px-3 py-1 rounded-full">Beginner</span>
+                    <span className="bg-[#B51D2A] bg-opacity-10 text-[#B51D2A] px-3 py-1 rounded-full">Beginner</span>
                   </div>
                 </div>
               </div>

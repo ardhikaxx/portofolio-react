@@ -64,7 +64,7 @@ export const projects = [
         description: 'I developed a website for PutraKJ Trans, a transportation company, to enhance their online presence. The site includes detailed information about services, fleet options, and an intuitive booking process, helping to connect clients with reliable transportation solutions.',
         image: Project6,
         languages: ['html', 'css', 'bootstrap', 'javascript'],
-        link: 'https://www.putrakjtrans.com/',
+        link: 'https://putrakttransjember.vercel.app/',
         year: 2024
     },
     {
@@ -73,7 +73,7 @@ export const projects = [
         description: 'This website was designed for Kelompok Tani Kopi Sumber Kembang to promote their coffee farming practices and products. The platform provides insights into the community’s activities, sustainable farming efforts, and the high-quality coffee they produce.',
         image: Project7,
         languages: ['html', 'css', 'bootstrap', 'javascript'],
-        link: 'https://kopisumberkembang.my.id/',
+        link: 'https://kopisumberkembangjember.vercel.app/',
         year: 2024
     },
     {
@@ -109,7 +109,7 @@ export const projects = [
         description: 'I developed the Glucozia AI website, an interactive chatbot powered by artificial intelligence designed to provide personalized diabetes education. This tool offers users real-time assistance, health analysis, and tailored advice through a responsive chat interface. It was built using HTML, CSS, Tailwind CSS, and JavaScript, ensuring a sleek and modern user experience. Glucozia acts as a virtual assistant, available 24/7 to help users understand diabetes, monitor their health status, and receive nutritional recommendations based on their individual needs.',
         image: Project11,
         languages: ['html', 'css', 'tailwind', 'javascript'],
-        link: 'https://dev-aitec-2025.vercel.app/',
+        link: 'https://glucozia-ai.vercel.app/',
         year: 2025
     },
     {
@@ -118,7 +118,7 @@ export const projects = [
         description: 'I developed a website for the 7th Agricultural Innovation Technology Competition (AITeC) 2025, hosted by Politeknik Negeri Jember. This website was built using HTML, Tailwind CSS, and JavaScript. My role focused on creating the front-end interface, ensuring a responsive and user-friendly experience.',
         image: Project12,
         languages: ['html', 'css', 'tailwind', 'javascript'],
-        link: 'https://dev-aitec-2025.vercel.app/',
+        link: 'https://aitec.bakorma.org/',
         year: 2025
     },
     // {

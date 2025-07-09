@@ -62,7 +62,7 @@ export const FlipWords = ({
           damping: 10,
         }}
         className={cn(
-          "z-10 inline-block relative text-left font-bold text-neutral-700 px-2",
+          "z-10 inline-block relative text-left font-bold text-white px-2",
           className
         )}
         key={currentWord}

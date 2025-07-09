@@ -69,14 +69,14 @@ export default function Header() {
           <nav className="hidden md:flex md:grow">
             <ul className="flex grow justify-end flex-wrap items-center">
               <li>
-                <Link href="https://www.instagram.com/ardhxkaa_/" target='_blank' className={`font-semibold ${scrolled ? 'text-black hover:text-gray-700' : 'text-black'} hover:text-gray-700 px-5 py-3 flex font-bold items-center transition duration-150 ease-in-out`}>Contact Me</Link>
+                <Link href="https://www.instagram.com/ardhxkaa_/" target='_blank' className={`font-semibold ${scrolled ? 'text-white hover:text-gray-300' : 'text-white'} hover:text-gray-300 px-5 py-3 flex font-bold items-center transition duration-150 ease-in-out`}>Contact Me</Link>
               </li>
               <li>
                 <button
                   onClick={handleDownload}
                   className={`btn-sm btn px-4 flex items-center py-2 font-semibold rounded-full ${scrolled
-                    ? 'bg-gradient-to-r from-[#4895D1] to-[#78B1E5] text-white'
-                    : 'bg-black text-white'
+                    ? 'bg-gradient-to-r from-[#B51D2A] to-[#E02435] text-white'
+                    : 'bg-white text-black'
                     } ml-3 transition-colors duration-300`}
                 >
                   <span>Download CV</span>
