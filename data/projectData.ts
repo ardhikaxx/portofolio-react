@@ -91,7 +91,7 @@ export const projects = [
         description: 'This website is designed to help users cook eggs perfectly every time. It includes interactive timers and guides for different types of egg preparations. Built using HTML, Tailwind CSS, and JavaScript.',
         image: Project9,
         languages: ['html', 'css', 'tailwind', 'javascript'],
-        link: 'https://egg-timer-eight.vercel.app/',
+        link: 'https://egg-timer-web.vercel.app/',
         year: 2025
     },
     {
