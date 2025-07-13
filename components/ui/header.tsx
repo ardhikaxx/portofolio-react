@@ -1,4 +1,3 @@
-// components/ui/header.tsx
 'use client'
 
 import { useState, useEffect } from 'react'
@@ -82,7 +81,7 @@ export default function Header() {
               </li>
             </ul>
           </nav>
-          <MobileMenu handleDownload={handleDownload} />
+          <MobileMenu/>
         </div>
       </div>
     </header>

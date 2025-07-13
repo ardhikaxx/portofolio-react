@@ -7,11 +7,40 @@ import Link from 'next/link'
 import { FiArrowRight } from 'react-icons/fi';
 import { FiDownload, FiX, FiMenu } from 'react-icons/fi'
 import { motion } from 'framer-motion'
+import { toast } from 'react-toastify';
 
-export default function MobileMenu({ handleDownload }: { handleDownload: () => void }) {
+export default function MobileMenu() {
   const [mobileNavOpen, setMobileNavOpen] = useState<boolean>(false)
   const trigger = useRef<HTMLButtonElement>(null)
   const mobileNav = useRef<HTMLDivElement>(null)
+
+  const handleDownload = () => {
+    const downloadUrl = '/pdf/cv-ats.pdf'
+    fetch(downloadUrl)
+      .then(response => response.blob())
+      .then(blob => {
+        const url = window.URL.createObjectURL(new Blob([blob]))
+        const link = document.createElement('a')
+        link.href = url
+        link.setAttribute('download', 'cv-kreatif.pdf')
+        document.body.appendChild(link)
+        link.click()
+        document.body.removeChild(link)
+        window.URL.revokeObjectURL(url)
+
+        toast.success('Download Successful!', {
+          position: "top-right",
+          theme: "colored",
+        })
+      })
+      .catch(error => {
+        console.error('Error during download:', error)
+        toast.error('Download Failed!', {
+          position: "top-center",
+          theme: "colored",
+        })
+      })
+  }
 
   // Close mobile menu on click outside
   useEffect(() => {
@@ -74,7 +103,7 @@ export default function MobileMenu({ handleDownload }: { handleDownload: () => v
         leaveTo="opacity-0"
       >
         <div className="fixed inset-0 bg-black/30 backdrop-blur-sm" aria-hidden="true" onClick={() => setMobileNavOpen(false)} />
-        
+
         <div className="fixed bottom-0 left-0 right-0 bg-white dark:bg-gray-800 rounded-t-3xl shadow-xl z-50 pt-6 pb-8 px-6">
           <div className="flex justify-end mb-6">
             <button
