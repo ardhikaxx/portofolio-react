@@ -77,14 +77,14 @@ export default function Project() {
     <section className="dark:bg-gray-900 relative py-10">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-12 flex flex-col justify-center items-center">
-          <h1 className="text-3xl font-bold text-white" data-aos="zoom-y-out">My Projects</h1>
-          <p className="text-xl text-gray-300" data-aos="zoom-y-out" data-aos-delay="150">Here are some of the projects I have worked on.</p>
+          <h1 className="text-3xl font-bold text-white dark:text-gray-100" data-aos="zoom-y-out">My Projects</h1>
+          <p className="text-xl text-gray-300 dark:text-gray-400" data-aos="zoom-y-out" data-aos-delay="150">Here are some of the projects I have worked on.</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8" data-aos="zoom-y-out" data-aos-delay="150">
           {projects.map(project => (
             <div
               key={project.id}
-              className="bg-white shadow-lg rounded-xl overflow-hidden transition-transform duration-300 group"
+              className="bg-white dark:bg-gray-800 shadow-lg rounded-xl overflow-hidden transition-transform duration-300 group hover:shadow-xl dark:hover:shadow-gray-700/50"
             >
               <div className="relative overflow-hidden h-56">
                 <Image
@@ -100,17 +100,20 @@ export default function Project() {
                 </div>
               </div>
               <div className="p-6">
-                <p className="text-gray-600 mb-4">
+                <p className="text-gray-600 dark:text-gray-300 mb-4">
                   {expandedProject === project.id ? project.description : getShortDescription(project.description)}
                   {project.description.length > maxLength && (
-                    <span onClick={() => toggleDescription(project.id)} className="text-[#B51D2A] cursor-pointer">
+                    <span 
+                      onClick={() => toggleDescription(project.id)} 
+                      className="text-[#B51D2A] dark:text-[#ff6b6b] cursor-pointer hover:underline ml-1"
+                    >
                       {expandedProject === project.id ? ' Show Less' : ' View All'}
                     </span>
                   )}
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.languages.map((lang, index) => (
-                    <div key={index} className="flex items-center bg-gray-200 rounded-full px-3 py-1 shadow-md text-gray-700">
+                    <div key={index} className="flex items-center bg-gray-200 dark:bg-gray-700 rounded-full px-3 py-1 shadow-md text-gray-700 dark:text-gray-200">
                       {icons[lang]}
                       <span className="ml-2 text-sm">{lang}</span>
                     </div>
@@ -118,7 +121,7 @@ export default function Project() {
                 </div>
                 <LinkPreview
                   url={project.link}
-                  className="inline-block px-5 py-2 bg-gradient-to-r from-[#B51D2A] to-[#E02435] text-white text-sm font-semibold rounded-full shadow-lg hover:bg-blue-600 transition duration-300"
+                  className="inline-block px-5 py-2 bg-gradient-to-r from-[#B51D2A] to-[#E02435] text-white text-sm font-semibold rounded-full shadow-lg hover:opacity-90 transition duration-300"
                 >
                   View Project
                 </LinkPreview>

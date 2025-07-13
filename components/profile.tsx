@@ -49,7 +49,7 @@ export default function Profile() {
             </div>
             <div className="flex items-center justify-center py-2 col-span-1 md:col-auto">
               <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width={55}height={55} alt="github logo" loading="lazy" className="filter invert"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width={55} height={55} alt="github logo" loading="lazy" className="filter invert"
               />
             </div>
             <div className="flex items-center justify-center py-2 col-span-1 md:col-auto">
@@ -60,10 +60,10 @@ export default function Profile() {
             </div>
           </div>
           <div className="max-w-3xl mx-auto mt-12 pt-20" data-aos="zoom-y-out">
-            <div className="relative flex flex-col items-center border-2 border-gray-200 rounded-lg bg-white shadow-lg p-8">
+            <div className="relative flex flex-col items-center border-2 border-gray-700 rounded-lg bg-gray-800 shadow-lg p-8">
               <div className="absolute top-0 -mt-24">
                 <Image
-                  className="rounded-full border-4 border-white shadow-lg grayscale-[50] hover:grayscale-0 transition-all duration-300 transform hover:scale-110"
+                  className="rounded-full border-4 border-gray-800 shadow-lg grayscale-[50] hover:grayscale-0 transition-all duration-300 transform hover:scale-110"
                   src={ProfilImage}
                   width={195}
                   height={195}
@@ -72,18 +72,18 @@ export default function Profile() {
                 />
               </div>
               <div className="mt-20 text-center">
-                <blockquote className="text-lg font-medium mb-4 text-gray-700 leading-relaxed">
-                  “Hello, I'm Yanuar Ardhika Rahmadhani Ubaidillah, a Junior Web & Mobile Developer passionate about combining technology and creativity to solve real-world challenges. I'm currently sharpening my skills in the Information Technology Department, Informatics Engineering (D4) at Politeknik Negeri Jember. With a strong background in web and mobile development, I’m eager to explore AI, IoT, and computer vision. I also enjoy designing intuitive user experiences and building efficient, scalable systems. Through my projects, I aim to deliver impactful solutions while staying up-to-date with the latest technology and design trends.“
+                <blockquote className="text-lg font-medium mb-4 text-gray-300 leading-relaxed">
+                  "Hello, I'm Yanuar Ardhika Rahmadhani Ubaidillah, a Junior Web & Mobile Developer passionate about combining technology and creativity to solve real-world challenges. I'm currently sharpening my skills in the Information Technology Department, Informatics Engineering (D4) at Politeknik Negeri Jember. With a strong background in web and mobile development, I'm eager to explore AI, IoT, and computer vision. I also enjoy designing intuitive user experiences and building efficient, scalable systems. Through my projects, I aim to deliver impactful solutions while staying up-to-date with the latest technology and design trends."
                 </blockquote>
-                <cite className="block font-bold text-xl not-italic mb-1 text-gray-900">Yanuar Ardhika Rahmadhani Ubaidillah</cite>
-                <div className="text-gray-600 text-lg">
+                <cite className="block font-bold text-xl not-italic mb-1 text-gray-100">Yanuar Ardhika Rahmadhani Ubaidillah</cite>
+                <div className="text-gray-400 text-lg">
                   <span>Junior Web & Mobile Developer</span>
                 </div>
                 <div className="flex justify-center mt-6 space-x-6">
                   <a
                     href="https://www.instagram.com/ardhkkaa_/"
                     target="_blank"
-                    className="text-gray-500 hover:text-gray-900 transition-transform transform hover:scale-110"
+                    className="text-gray-400 hover:text-gray-100 transition-transform transform hover:scale-110"
                     aria-label="Instagram Profile"
                   >
                     <FontAwesomeIcon icon={faInstagram} size="2x" />
@@ -91,7 +91,7 @@ export default function Profile() {
                   <a
                     href="https://github.com/ardhikaxx"
                     target="_blank"
-                    className="text-gray-500 hover:text-gray-900 transition-transform transform hover:scale-110"
+                    className="text-gray-400 hover:text-gray-100 transition-transform transform hover:scale-110"
                     aria-label="GitHub Profile"
                   >
                     <FontAwesomeIcon icon={faGithub} size="2x" />
@@ -99,7 +99,7 @@ export default function Profile() {
                   <a
                     href="https://www.linkedin.com/in/yanuar-ardhika-rahmadhani-ubaidillah-36a842287/"
                     target="_blank"
-                    className="text-gray-500 hover:text-gray-900 transition-transform transform hover:scale-110"
+                    className="text-gray-400 hover:text-gray-100 transition-transform transform hover:scale-110"
                     aria-label="LinkedIn Profile"
                   >
                     <FontAwesomeIcon icon={faLinkedin} size="2x" />

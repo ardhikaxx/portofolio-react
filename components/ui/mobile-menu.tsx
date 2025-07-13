@@ -1,126 +1,128 @@
+// components/ui/mobile-menu.tsx
 'use client'
 
 import { useState, useRef, useEffect } from 'react'
 import { Transition } from '@headlessui/react'
-import Link from 'next/link';
-import Icon from '@mdi/react';
-import { mdiTrayArrowDown } from '@mdi/js';
-import { toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import Link from 'next/link'
+import { FiArrowRight } from 'react-icons/fi';
+import { FiDownload, FiX, FiMenu } from 'react-icons/fi'
+import { motion } from 'framer-motion'
 
-
-export default function MobileMenu() {
-
+export default function MobileMenu({ handleDownload }: { handleDownload: () => void }) {
   const [mobileNavOpen, setMobileNavOpen] = useState<boolean>(false)
-
   const trigger = useRef<HTMLButtonElement>(null)
   const mobileNav = useRef<HTMLDivElement>(null)
 
-  const handleDownload = () => {
-    const downloadUrl = '/pdf/cv-kreatif.pdf';
-    fetch(downloadUrl)
-      .then(response => response.blob())
-      .then(blob => {
-        const url = window.URL.createObjectURL(new Blob([blob]));
-        const link = document.createElement('a');
-        link.href = url;
-        link.setAttribute('download', 'cv-kreatif.pdf');
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-        window.URL.revokeObjectURL(url);
-
-        toast.success('Download Successful!', {
-          position: "top-right",
-          autoClose: 5000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
-          style: { width: '300px', marginLeft: 'auto'},
-        });
-      })
-      .catch(error => {
-        console.error('Error during download:', error);
-        toast.error('Download Failed! There was an error downloading the file.', {
-          position: "top-center",
-          autoClose: 5000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
-        });
-      });
-  };
-
+  // Close mobile menu on click outside
   useEffect(() => {
     const clickHandler = ({ target }: { target: EventTarget | null }): void => {
-      if (!mobileNav.current || !trigger.current) return;
-      if (!mobileNavOpen || mobileNav.current.contains(target as Node) || trigger.current.contains(target as Node)) return;
+      if (!mobileNav.current || !trigger.current) return
+      if (!mobileNavOpen || mobileNav.current.contains(target as Node) || trigger.current.contains(target as Node)) return
       setMobileNavOpen(false)
-    };
+    }
     document.addEventListener('click', clickHandler)
     return () => document.removeEventListener('click', clickHandler)
   })
 
+  // Close mobile menu on ESC key
   useEffect(() => {
     const keyHandler = ({ keyCode }: { keyCode: number }): void => {
-      if (!mobileNavOpen || keyCode !== 27) return;
+      if (!mobileNavOpen || keyCode !== 27) return
       setMobileNavOpen(false)
-    };
+    }
     document.addEventListener('keydown', keyHandler)
     return () => document.removeEventListener('keydown', keyHandler)
   })
 
+  // Prevent scrolling when mobile menu is open
+  useEffect(() => {
+    if (mobileNavOpen) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = ''
+    }
+  }, [mobileNavOpen])
+
   return (
     <div className="flex md:hidden">
+      {/* Hamburger button */}
       <button
         ref={trigger}
-        className={`hamburger ${mobileNavOpen && 'active'}`}
+        className="h-12 w-12 rounded-full flex items-center justify-center transition-all"
         aria-controls="mobile-nav"
         aria-expanded={mobileNavOpen}
         onClick={() => setMobileNavOpen(!mobileNavOpen)}
       >
-        <span className="sr-only">Menu</span>
-        <svg className="w-6 h-6 fill-current text-gray-300" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <rect y="4" width="24" height="2" />
-          <rect y="11" width="24" height="2" />
-          <rect y="18" width="24" height="2" />
-        </svg>
+        {mobileNavOpen ? (
+          <FiX className="text-gray-800 dark:text-white w-6 h-6" />
+        ) : (
+          <FiMenu className="text-gray-800 dark:text-white w-6 h-6" />
+        )}
+        <span className="sr-only">Toggle menu</span>
       </button>
 
-      <div ref={mobileNav}>
-        <Transition
-          show={mobileNavOpen}
-          as="nav"
-          id="mobile-nav"
-          className="absolute top-full h-25 w-full justify-center items-center rounded-lg z-20 left-0 bg-white"
-          enter="transition ease-out duration-200 transform"
-          enterFrom="opacity-0 -translate-y-2"
-          enterTo="opacity-100 translate-y-0"
-          leave="transition ease-out duration-200"
-          leaveFrom="opacity-100"
-          leaveTo="opacity-0"
-        >
-          <ul className="flex flex-col justify-center items-center px-2 py-2 ">
-            <li>
-              <Link href="https://www.instagram.com/ardhkkaa_/" target='_blank' className="flex font-medium w-full text-gray-600 hover:text-gray-900 py-2 justify-center">Contact Me</Link>
-            </li>
-            <li>
-              <button onClick={() => setMobileNavOpen(false)}>
-              </button>
-            </li>
-            <li>
-              <button className="btn-sm btn-sm btn px-3 flex items-center py-2 rounded-full text-gray-200 bg-gray-900 hover:bg-gray-800 my-2" onClick={handleDownload}>
-                Download CV
-                <Icon path={mdiTrayArrowDown} className='ml-2' size={1} />
-              </button>
-            </li>
-          </ul>
-        </Transition>
-      </div>
+      {/* Mobile menu */}
+      <Transition
+        show={mobileNavOpen}
+        as="div"
+        className="fixed inset-0 z-40 overflow-y-auto"
+        enter="transition ease-out duration-200"
+        enterFrom="opacity-0"
+        enterTo="opacity-100"
+        leave="transition ease-in duration-150"
+        leaveFrom="opacity-100"
+        leaveTo="opacity-0"
+      >
+        <div className="fixed inset-0 bg-black/30 backdrop-blur-sm" aria-hidden="true" onClick={() => setMobileNavOpen(false)} />
+        
+        <div className="fixed bottom-0 left-0 right-0 bg-white dark:bg-gray-800 rounded-t-3xl shadow-xl z-50 pt-6 pb-8 px-6">
+          <div className="flex justify-end mb-6">
+            <button
+              onClick={() => setMobileNavOpen(false)}
+              className="h-10 w-10 rounded-full flex items-center justify-center bg-gray-100 dark:bg-gray-700"
+            >
+              <FiX className="text-gray-600 dark:text-gray-300 w-5 h-5" />
+            </button>
+          </div>
+
+          <nav ref={mobileNav} id="mobile-nav">
+            <ul className="flex flex-col space-y-6">
+              <motion.li
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.2 }}
+              >
+                <Link
+                  href="https://www.instagram.com/ardhkkaa_/"
+                  target="_blank"
+                  className="flex items-center justify-between py-3 text-gray-800 dark:text-gray-100 font-medium text-lg"
+                  onClick={() => setMobileNavOpen(false)}
+                >
+                  Contact Me
+                  <FiArrowRight className='ml-2' size={18} />
+                </Link>
+              </motion.li>
+
+              <motion.li
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.2, delay: 0.1 }}
+              >
+                <button
+                  onClick={() => {
+                    handleDownload()
+                    setMobileNavOpen(false)
+                  }}
+                  className="w-full flex items-center justify-between py-3 px-4 rounded-xl bg-gradient-to-r from-[#B51D2A] to-[#E02435] text-white font-medium text-lg"
+                >
+                  Download CV
+                  <FiDownload className="w-5 h-5" />
+                </button>
+              </motion.li>
+            </ul>
+          </nav>
+        </div>
+      </Transition>
     </div>
   )
 }
