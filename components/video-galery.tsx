@@ -130,7 +130,7 @@ export default function VideoGallery() {
                                 ></iframe>
                             </div>
                             <div className="mt-4">
-                                <h3 className="text-2xl font-bold text-white text-center">
+                                <h3 className="text-xl font-bold text-white text-center">
                                     {videoData.find(v => getYouTubeId(v.youtubeUrl) === selectedVideo)?.title}
                                 </h3>
                             </div>
