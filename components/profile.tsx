@@ -1,109 +1,126 @@
+'use client'
+
 import Image from 'next/image';
 import ProfilImage from '@/public/images/me.jpg';
-import '@fortawesome/fontawesome-free/css/all.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
 
 export default function Profile() {
   return (
-    <section className="dark:bg-gray-900 relative py-5 z-10">
-      <div className="absolute left-1/2 transform -translate-x-1/2 bottom-0 pointer-events-none -mb-32" aria-hidden="true">
-        <svg width="1760" height="518" viewBox="0 0 1760 518" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="illustration-01">
-              <stop stopColor="#B4D6E9" offset="0%" />
-              <stop stopColor="#78B1E5" offset="50%" />
-              <stop stopColor="#4895D1" offset="100%" />
-            </linearGradient>
-          </defs>
-          <g transform="translate(0 -3)" fill="url(#illustration-02)" fillRule="evenodd">
-            <circle cx="1630" cy="128" r="128" />
-            <circle cx="178" cy="481" r="40" />
-          </g>
-        </svg>
+    <section className="relative bg-gray-900 py-16 overflow-hidden">
+      {/* Subtle grid background */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')]"></div>
       </div>
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="py-12 md:py-20">
-          <div className="mx-auto text-center pb-5 md:pb-6">
-            <h2 className="text-3xl font-bold text-white" data-aos="zoom-y-out">Apps I Frequently Use</h2>
-            <p className="text-gray-300" data-aos="zoom-y-out">These are the apps I frequently use for daily development and design projects.</p>
-          </div>
-          <div className="max-w-sm md:max-w-1xl mx-auto grid gap-5 grid-cols-4 md:grid-cols-5" data-aos="zoom-y-out" data-aos-delay="250">
-            <div className="flex items-center justify-center py-2 col-span-1 md:col-auto">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" width={55} height={55} alt="vscode logo" loading="lazy" />
-            </div>
-            <div className="flex items-center justify-center py-2 col-span-1 md:col-auto">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg" width={55} height={55} alt="visualstudio logo" loading="lazy" />
-            </div>
-            <div className="flex items-center justify-center py-2 col-span-1 md:col-auto">
-              <img src="https://skillicons.dev/icons?i=powershell" width={55} height={55} alt="powershell logo" loading="lazy" />
-            </div>
-            <div className="flex items-center justify-center py-2 col-span-1 md:col-auto">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg" width={55} height={55} alt="androidstudio logo" loading="lazy" />
-            </div>
-            <div className="flex items-center justify-center py-2 col-span-1 md:col-auto">
-              <img src="https://cdn.simpleicons.org/postman/FF6C37" width={55} height={55} alt="postman logo" loading="lazy" />
-            </div>
-            <div className="flex items-center justify-center py-2 col-span-1 md:col-auto">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width={55} height={55} alt="git logo" loading="lazy" />
-            </div>
-            <div className="flex items-center justify-center py-2 col-span-1 md:col-auto">
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width={55} height={55} alt="github logo" loading="lazy" className="filter invert"
-              />
-            </div>
-            <div className="flex items-center justify-center py-2 col-span-1 md:col-auto">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg" width={55} height={55} alt="trello logo" loading="lazy" />
-            </div>
-            <div className="flex items-center justify-center py-1 col-span-1 md:col-auto">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" width={55} height={55} alt="figma logo" loading="lazy" />
-            </div>
-          </div>
-          <div className="max-w-3xl mx-auto mt-12 pt-20" data-aos="zoom-y-out">
-            <div className="relative flex flex-col items-center border-2 border-gray-700 rounded-lg bg-gray-800 shadow-lg p-8">
-              <div className="absolute top-0 -mt-24">
-                <Image
-                  className="rounded-full border-4 border-gray-800 shadow-lg grayscale-[50] hover:grayscale-0 transition-all duration-300 transform hover:scale-110"
-                  src={ProfilImage}
-                  width={195}
-                  height={195}
-                  alt="Profile Image"
-                  quality={75}
-                />
-              </div>
-              <div className="mt-20 text-center">
-                <blockquote className="text-lg font-medium mb-4 text-gray-300 leading-relaxed">
-                  "Hello, I'm Yanuar Ardhika Rahmadhani Ubaidillah, a Junior Web & Mobile Developer passionate about combining technology and creativity to solve real-world challenges. I'm currently sharpening my skills in the Information Technology Department, Informatics Engineering (D4) at Politeknik Negeri Jember. With a strong background in web and mobile development, I'm eager to explore AI, IoT, and computer vision. I also enjoy designing intuitive user experiences and building efficient, scalable systems. Through my projects, I aim to deliver impactful solutions while staying up-to-date with the latest technology and design trends."
-                </blockquote>
-                <cite className="block font-bold text-xl not-italic mb-1 text-gray-100">Yanuar Ardhika Rahmadhani Ubaidillah</cite>
-                <div className="text-gray-400 text-lg">
-                  <span>Junior Web & Mobile Developer</span>
+
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
+        {/* Tools Section - Simplified */}
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-3">
+            My <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#E02435] to-[#B51D2A]">Development Stack</span>
+          </h2>
+          <p className="text-gray-400 max-w-2xl mx-auto">
+            Tools and technologies I use daily to build amazing products
+          </p>
+          
+          <div className="mt-10 flex flex-wrap justify-center gap-6">
+            {[
+              { name: 'VS Code', icon: 'vscode-original', source: 'devicon' },
+              { name: 'Visual Studio', icon: 'visualstudio-plain', source: 'devicon' },
+              { name: 'Android Studio', icon: 'androidstudio-original', source: 'devicon' },
+              { name: 'Postman', icon: 'https://cdn.simpleicons.org/postman/FF6C37', source: 'simpleicons' },
+              { name: 'Git', icon: 'git-original', source: 'devicon' },
+              { name: 'GitHub', icon: 'github-original', source: 'devicon', invert: true },
+              { name: 'Figma', icon: 'figma-original', source: 'devicon' },
+            ].map((tool, index) => (
+              <div 
+                key={index}
+                className="flex flex-col items-center group"
+                data-aos="fade-up"
+                data-aos-delay={index * 50}
+              >
+                <div className="w-14 h-14 md:w-16 md:h-16 bg-gray-800/50 backdrop-blur-sm rounded-lg flex items-center justify-center p-3 mb-2 transition-all duration-300 hover:bg-gray-700/80 hover:transform hover:scale-110 hover:shadow-md border border-gray-700/50">
+                  <img 
+                    src={tool.source === 'devicon' 
+                      ? `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${tool.icon.split('-')[0]}/${tool.icon}.svg` 
+                      : tool.icon} 
+                    alt={`${tool.name} logo`} 
+                    loading="lazy" 
+                    className={`w-full h-full object-contain ${tool.invert ? 'filter invert' : ''}`}
+                  />
                 </div>
-                <div className="flex justify-center mt-6 space-x-6">
-                  <a
-                    href="https://www.instagram.com/ardhkkaa_/"
-                    target="_blank"
-                    className="text-gray-400 hover:text-gray-100 transition-transform transform hover:scale-110"
-                    aria-label="Instagram Profile"
-                  >
-                    <FontAwesomeIcon icon={faInstagram} size="2x" />
-                  </a>
-                  <a
-                    href="https://github.com/ardhikaxx"
-                    target="_blank"
-                    className="text-gray-400 hover:text-gray-100 transition-transform transform hover:scale-110"
-                    aria-label="GitHub Profile"
-                  >
-                    <FontAwesomeIcon icon={faGithub} size="2x" />
-                  </a>
-                  <a
-                    href="https://www.linkedin.com/in/yanuar-ardhika-rahmadhani-ubaidillah-36a842287/"
-                    target="_blank"
-                    className="text-gray-400 hover:text-gray-100 transition-transform transform hover:scale-110"
-                    aria-label="LinkedIn Profile"
-                  >
-                    <FontAwesomeIcon icon={faLinkedin} size="2x" />
-                  </a>
+                <span className="text-xs md:text-sm text-gray-400 group-hover:text-white transition-colors">{tool.name}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="max-w-3xl mx-auto" data-aos="fade-up">
+          <div className="relative group">
+            <div className="relative bg-gray-800/70 backdrop-blur-sm rounded-xl overflow-hidden border border-gray-700/50 shadow-2xl">
+              <div className="flex flex-col items-center pt-10 px-6">
+                <div className="relative mb-6">
+                  <div className="absolute inset-0 rounded-full opacity-80 blur-md -z-10 group-hover:opacity-100 transition duration-500"></div>
+                  <Image
+                    className="relative rounded-full border-4 border-gray-800 shadow-lg w-48 h-48 object-cover transition-all duration-500"
+                    src={ProfilImage}
+                    width={192}
+                    height={192}
+                    alt="Profile"
+                    quality={100}
+                  />
+                </div>
+                
+                <h3 className="text-2xl font-bold text-white">
+                  Yanuar Ardhika R. U.
+                </h3>
+                <h5 className="text-[#E02435] font-bold">Junior Web & Mobile Developer</h5>
+              </div>
+              <div className="p-6 md:p-8">
+                <div className="relative mb-6">
+                  <FontAwesomeIcon 
+                    icon={faQuoteLeft} 
+                    className="absolute -top-6 left-0 text-gray-600 text-2xl opacity-30"
+                  />
+                  <p className="text-gray-300 leading-relaxed pl-6">
+                    Passionate about combining technology and creativity to solve real-world challenges. 
+                    Currently sharpening my skills in Information Technology at Politeknik Negeri Jember. 
+                    With strong background in web and mobile development, I'm eager to explore AI, IoT, 
+                    and computer vision. I enjoy designing intuitive experiences and building efficient systems.
+                  </p>
+                </div>
+
+                <div className="flex flex-col sm:flex-row justify-between items-center gap-6 border-t border-gray-700/50 pt-6">
+                  <div className="flex-1">
+                    <h4 className="text-sm font-semibold text-gray-400 mb-2">MAIN SKILLS</h4>
+                    <div className="flex flex-wrap gap-2">
+                      {['Web Dev', 'Mobile Dev', 'UI/UX', 'System Design'].map((skill, i) => (
+                        <span key={i} className="text-xs bg-gray-700/50 text-gray-300 px-3 py-1 rounded-full">
+                          {skill}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+
+                  <div className="flex space-x-4">
+                    {[
+                      { icon: faGithub, url: "https://github.com/ardhikaxx", label: "GitHub" },
+                      { icon: faLinkedin, url: "https://www.linkedin.com/in/yanuar-ardhika-rahmadhani-ubaidillah-36a842287/", label: "LinkedIn" },
+                      { icon: faInstagram, url: "https://www.instagram.com/ardhkkaa_/", label: "Instagram" },
+                    ].map((social, index) => (
+                      <a
+                        key={index}
+                        href={social.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-10 h-10 rounded-full bg-gray-700/50 hover:bg-gray-600 flex items-center justify-center text-gray-300 hover:text-white transition-all duration-300 hover:scale-110"
+                        aria-label={social.label}
+                      >
+                        <FontAwesomeIcon icon={social.icon} size="sm" />
+                      </a>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>

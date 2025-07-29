@@ -81,7 +81,7 @@ export default function Header() {
               </li>
             </ul>
           </nav>
-          <MobileMenu/>
+          <MobileMenu scrolled={scrolled} />
         </div>
       </div>
     </header>

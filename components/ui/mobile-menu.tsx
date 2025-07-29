@@ -1,4 +1,3 @@
-// components/ui/mobile-menu.tsx
 'use client'
 
 import { useState, useRef, useEffect } from 'react'
@@ -9,7 +8,11 @@ import { FiDownload, FiX, FiMenu } from 'react-icons/fi'
 import { motion } from 'framer-motion'
 import { toast } from 'react-toastify';
 
-export default function MobileMenu() {
+interface MobileMenuProps {
+  scrolled: boolean;
+}
+
+export default function MobileMenu({ scrolled }: MobileMenuProps) {
   const [mobileNavOpen, setMobileNavOpen] = useState<boolean>(false)
   const trigger = useRef<HTMLButtonElement>(null)
   const mobileNav = useRef<HTMLDivElement>(null)
@@ -104,7 +107,7 @@ export default function MobileMenu() {
       >
         <div className="fixed inset-0 bg-black/30 backdrop-blur-sm" aria-hidden="true" onClick={() => setMobileNavOpen(false)} />
 
-        <div className="fixed bottom-0 left-0 right-0 bg-white dark:bg-gray-800 rounded-t-3xl shadow-xl z-50 pt-6 pb-8 px-6">
+        <div className={`fixed ${scrolled ? 'top-0' : 'bottom-0'} left-0 right-0 bg-white dark:bg-gray-800 ${scrolled ? 'rounded-b-3xl' : 'rounded-t-3xl'} shadow-xl z-50 pt-6 pb-8 px-6`}>
           <div className="flex justify-end mb-6">
             <button
               onClick={() => setMobileNavOpen(false)}
