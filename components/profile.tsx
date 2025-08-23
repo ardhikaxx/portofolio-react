@@ -8,13 +8,12 @@ import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
 
 export default function Profile() {
   return (
-    <section className="relative bg-gray-900 py-16 overflow-hidden">
+    <section className="relative bg-black py-16 overflow-hidden">
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
-        {/* Tools Section - Simplified */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-3">
-            My <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#E02435] to-[#B51D2A]">Development Stack</span>
+            My Development Stack
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
             Tools and technologies I use daily to build amazing products

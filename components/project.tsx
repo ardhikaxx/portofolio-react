@@ -74,7 +74,7 @@ export default function Project() {
   const [tab, setTab] = useState<number>(1)
 
   return (
-    <section className="dark:bg-gray-900 relative py-10">
+    <section className="bg-black relative py-10">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-12 flex flex-col justify-center items-center">
           <h1 className="text-3xl font-bold text-white dark:text-gray-100" data-aos="zoom-y-out">My Projects</h1>

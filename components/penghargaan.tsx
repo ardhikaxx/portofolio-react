@@ -3,7 +3,7 @@ import { penghargaanData } from '@/data/penghargaanData';
 
 const Awards = () => {
     return (
-        <section className="relative py-20 dark:bg-gray-900">
+        <section className="relative py-20 bg-black">
 
             <div className="max-w-7xl mx-auto px-5 sm:px-10">
                 <div className="text-center mb-12 flex flex-col justify-center items-center">

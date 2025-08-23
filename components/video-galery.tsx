@@ -35,13 +35,15 @@ export default function VideoGallery() {
     };
 
     return (
-        <section className="dark:bg-gray-900 py-16">
+        <section className="bg-black py-16">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="text-center mb-16">
-                    <h1 className="text-4xl font-bold text-white mb-4">
-                        Video Projects
+                <div className="text-center mb-12 flex flex-col justify-center items-center">
+                    <h1 className="text-3xl font-bold text-white dark:text-gray-100" data-aos="zoom-y-out">
+                        Video Highlights
                     </h1>
-                    <div className="w-20 h-1 bg-blue-500 mx-auto"></div>
+                    <p className="text-xl text-gray-300 dark:text-gray-400" data-aos="zoom-y-out" data-aos-delay="150">
+                        Relive the moments through video documentation of my projects and activities.
+                    </p>
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">

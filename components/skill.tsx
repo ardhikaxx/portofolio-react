@@ -1,6 +1,6 @@
 export default function Skill() {
   return (
-    <section className="dark:bg-gray-900 relative py-16">
+    <section className="bg-black relative py-16">
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
         <div className="pt-5 md:pt-10">
           <div className="max-w-3xl text-center mx-auto pb-10 md:pb-16">
