@@ -6,7 +6,7 @@ export default function Logo() {
   return (
     <Link href="/" className="block" aria-label="Cruip">
       <div className="text-2xl flex justify-center items-center font-bold text-white">
-        <Image className="relative" src={LogoImage} width={50} height={50} alt="Logo" /> ARDHIKA
+        ARDHIKA
       </div>
     </Link>
   )

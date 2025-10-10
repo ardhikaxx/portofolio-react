@@ -49,4 +49,4 @@ export const penghargaanData = [
         tahun: '2025',
         penyelenggara: 'Ketua Jurusan Teknologi Informasi',
     },
-];  
+];

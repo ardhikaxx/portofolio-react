@@ -22,14 +22,14 @@ const DownloadButton: React.FC = () => {
                 window.URL.revokeObjectURL(url);
 
                 toast.success('Download Successful!', {
-                    position: "top-right",
+                    position: "top-center",
                     autoClose: 5000,
                     hideProgressBar: false,
                     closeOnClick: true,
                     pauseOnHover: true,
                     draggable: true,
                     progress: undefined,
-                    style: { width: '300px', marginLeft: 'auto'},
+                    theme: "colored",
                 });
             })
             .catch(error => {
@@ -42,6 +42,7 @@ const DownloadButton: React.FC = () => {
                     pauseOnHover: true,
                     draggable: true,
                     progress: undefined,
+                    theme: "colored",
                 });
             });
     };

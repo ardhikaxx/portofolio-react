@@ -1,7 +1,5 @@
 'use client';
 
-import Image from 'next/image';
-import LogoImage from '@/public/images/logo-simple.png';
 import { FlipWords } from "./ui/flip-words";
 import React from 'react';
 import DownloadButton from './ui/DownloadButton';
@@ -45,7 +43,6 @@ export default function Hero() {
         <div className="pt-32 pb-12 md:pt-40 mt-10 md:pb-20">
           <div className="text-center pb-12 md:pb-16">
             <div className="flex flex-col md:flex-row items-center justify-center gap-2" data-aos="zoom-y-out">
-              <Image className="inline -mt-4" src={LogoImage} width={100} height={100} alt="Logo" priority quality={75}/>
               <h1 className="text-2xl md:text-5xl font-extrabold text-white leading-tighter tracking-tighter mb-4 flex items-center text-center">
                 <SplitText
                   text="Hello, I'm Yanuar Ardhika"

@@ -3,9 +3,8 @@
 import { useState, useRef, useEffect } from 'react'
 import { Transition } from '@headlessui/react'
 import Link from 'next/link'
-import { FiArrowRight } from 'react-icons/fi';
-import { FiDownload, FiX, FiMenu } from 'react-icons/fi'
-import { motion } from 'framer-motion'
+import { FiArrowRight, FiDownload, FiX, FiMenu, FiInstagram, FiMail, FiGithub } from 'react-icons/fi'
+import { motion, AnimatePresence } from 'framer-motion'
 import { toast } from 'react-toastify';
 
 interface MobileMenuProps {
@@ -32,7 +31,13 @@ export default function MobileMenu({ scrolled }: MobileMenuProps) {
         window.URL.revokeObjectURL(url)
 
         toast.success('Download Successful!', {
-          position: "top-right",
+          position: "top-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
           theme: "colored",
         })
       })
@@ -40,6 +45,12 @@ export default function MobileMenu({ scrolled }: MobileMenuProps) {
         console.error('Error during download:', error)
         toast.error('Download Failed!', {
           position: "top-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
           theme: "colored",
         })
       })
@@ -75,86 +86,124 @@ export default function MobileMenu({ scrolled }: MobileMenuProps) {
     }
   }, [mobileNavOpen])
 
+  const menuItems = [
+    {
+      name: 'Instagram',
+      href: 'https://www.instagram.com/ardhxkaa_/',
+      icon: FiInstagram,
+      color: 'from-pink-500 to-purple-600'
+    },
+    {
+      name: 'Email',
+      href: 'mailto:your-email@gmail.com',
+      icon: FiMail,
+      color: 'from-blue-500 to-cyan-600'
+    },
+    {
+      name: 'GitHub',
+      href: 'https://github.com/yourusername',
+      icon: FiGithub,
+      color: 'from-gray-700 to-gray-900'
+    }
+  ]
+
   return (
-    <div className="flex md:hidden">
-      {/* Hamburger button */}
+    <div className="flex md:hidden"> {/* Tambahkan md:hidden di sini */}
+      {/* Hamburger button untuk floating nav */}
       <button
         ref={trigger}
-        className="h-12 w-12 rounded-full flex items-center justify-center transition-all"
+        className="h-10 w-10 rounded-full flex items-center justify-center bg-gradient-to-r from-[#B51D2A] to-[#E02435] text-white shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
         aria-controls="mobile-nav"
         aria-expanded={mobileNavOpen}
         onClick={() => setMobileNavOpen(!mobileNavOpen)}
       >
         {mobileNavOpen ? (
-          <FiX className="text-gray-800 dark:text-white w-6 h-6" />
+          <FiX className="w-5 h-5" />
         ) : (
-          <FiMenu className="text-gray-800 dark:text-white w-6 h-6" />
+          <FiMenu className="w-5 h-5" />
         )}
         <span className="sr-only">Toggle menu</span>
       </button>
 
-      {/* Mobile menu */}
-      <Transition
-        show={mobileNavOpen}
-        as="div"
-        className="fixed inset-0 z-40 overflow-y-auto"
-        enter="transition ease-out duration-200"
-        enterFrom="opacity-0"
-        enterTo="opacity-100"
-        leave="transition ease-in duration-150"
-        leaveFrom="opacity-100"
-        leaveTo="opacity-0"
-      >
-        <div className="fixed inset-0 bg-black/30 backdrop-blur-sm" aria-hidden="true" onClick={() => setMobileNavOpen(false)} />
-
-        <div className={`fixed ${scrolled ? 'top-0' : 'bottom-0'} left-0 right-0 bg-white dark:bg-gray-800 ${scrolled ? 'rounded-b-3xl' : 'rounded-t-3xl'} shadow-xl z-50 pt-6 pb-8 px-6`}>
-          <div className="flex justify-end mb-6">
-            <button
-              onClick={() => setMobileNavOpen(false)}
-              className="h-10 w-10 rounded-full flex items-center justify-center bg-gray-100 dark:bg-gray-700"
+      <AnimatePresence>
+        {mobileNavOpen && (
+          <>
+            <motion.div
+              ref={mobileNav}
+              initial={{ opacity: 0, scale: 0.9, y: 20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.9, y: 20 }}
+              transition={{ type: "spring", damping: 25, stiffness: 300 }}
+              className="fixed bottom-24 left-4 right-4 bg-white/95 dark:bg-gray-900/95 backdrop-blur-xl rounded-3xl shadow-2xl border border-white/20 dark:border-gray-700/20 z-50 p-6 md:hidden"
             >
-              <FiX className="text-gray-600 dark:text-gray-300 w-5 h-5" />
-            </button>
-          </div>
+              <div className="text-center mb-6">
+                <h3 className="text-lg font-bold text-gray-800 dark:text-white">
+                  Quick Links
+                </h3>
+                <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
+                  Connect with me
+                </p>
+              </div>
 
-          <nav ref={mobileNav} id="mobile-nav">
-            <ul className="flex flex-col space-y-6">
-              <motion.li
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.2 }}
-              >
-                <Link
-                  href="https://www.instagram.com/ardhkkaa_/"
-                  target="_blank"
-                  className="flex items-center justify-between py-3 text-gray-800 dark:text-gray-100 font-medium text-lg"
-                  onClick={() => setMobileNavOpen(false)}
-                >
-                  Contact Me
-                  <FiArrowRight className='ml-2' size={18} />
-                </Link>
-              </motion.li>
+              <nav className="space-y-3">
+                {menuItems.map((item, index) => (
+                  <motion.div
+                    key={item.name}
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: index * 0.1 }}
+                  >
+                    <Link
+                      href={item.href}
+                      target="_blank"
+                      className="flex items-center justify-between p-4 rounded-2xl bg-gray-50/80 dark:bg-gray-800/80 hover:bg-gray-100 dark:hover:bg-gray-700/80 transition-all duration-200 group"
+                      onClick={() => setMobileNavOpen(false)}
+                    >
+                      <div className="flex items-center space-x-3">
+                        <div className={`p-2 rounded-xl bg-gradient-to-r ${item.color} text-white shadow-lg`}>
+                          <item.icon className="w-4 h-4" />
+                        </div>
+                        <span className="font-medium text-gray-800 dark:text-gray-200 group-hover:text-gray-900 dark:group-hover:text-white">
+                          {item.name}
+                        </span>
+                      </div>
+                      <FiArrowRight className="text-gray-400 group-hover:text-gray-600 dark:group-hover:text-gray-300 transition-colors" />
+                    </Link>
+                  </motion.div>
+                ))}
 
-              <motion.li
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.2, delay: 0.1 }}
-              >
-                <button
-                  onClick={() => {
-                    handleDownload()
-                    setMobileNavOpen(false)
-                  }}
-                  className="w-full flex items-center justify-between py-3 px-4 rounded-xl bg-gradient-to-r from-[#B51D2A] to-[#E02435] text-white font-medium text-lg"
+                <motion.div
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 0.3 }}
                 >
-                  Download CV
-                  <FiDownload className="w-5 h-5" />
-                </button>
-              </motion.li>
-            </ul>
-          </nav>
-        </div>
-      </Transition>
+                  <button
+                    onClick={() => {
+                      handleDownload()
+                      setMobileNavOpen(false)
+                    }}
+                    className="w-full flex items-center justify-between p-4 rounded-2xl bg-gradient-to-r from-[#B51D2A] to-[#E02435] text-white shadow-lg hover:shadow-xl transition-all duration-200 group hover:scale-[1.02]"
+                  >
+                    <div className="flex items-center space-x-3">
+                      <div className="p-2 rounded-xl bg-white/20 backdrop-blur-sm">
+                        <FiDownload className="w-4 h-4" />
+                      </div>
+                      <span className="font-medium">Download CV</span>
+                    </div>
+                    <FiArrowRight className="text-white/80 group-hover:text-white" />
+                  </button>
+                </motion.div>
+              </nav>
+
+              <div className="mt-6 pt-4 border-t border-gray-200/50 dark:border-gray-700/50">
+                <p className="text-xs text-center text-gray-500 dark:text-gray-400">
+                  Let's create something amazing together! ✨
+                </p>
+              </div>
+            </motion.div>
+          </>
+        )}
+      </AnimatePresence>
     </div>
   )
 }

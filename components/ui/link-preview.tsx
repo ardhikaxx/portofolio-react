@@ -92,7 +92,7 @@ export const LinkPreview = ({
             <HoverCardPrimitive.Root
                 openDelay={50}
                 closeDelay={100}
-                onOpenChange={(open) => {
+                onOpenChange={(open: boolean | ((prevState: boolean) => boolean)) => {
                     setOpen(open);
                 }}
             >
