@@ -45,7 +45,7 @@ export default function Hero() {
             <div className="flex flex-col md:flex-row items-center justify-center gap-2" data-aos="zoom-y-out">
               <h1 className="text-2xl md:text-5xl font-extrabold text-white leading-tighter tracking-tighter mb-4 flex items-center text-center">
                 <SplitText
-                  text="Hello, I'm Yanuar Ardhika"
+                  text="</Hello, I'm Yanuar Ardhika>"
                   className="text-2xl md:text-5xl font-extrabold text-white leading-tighter tracking-tighter"
                   delay={100}
                   duration={0.6}
