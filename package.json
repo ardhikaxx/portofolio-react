@@ -22,7 +22,7 @@
     "@mdi/js": "^7.4.47",
     "@mdi/react": "^1.6.1",
     "@mui/icons-material": "^6.3.1",
-    "@mui/lab": "^6.0.0-beta.22",
+    "@mui/lab": "^7.0.1-beta.18",
     "@mui/material": "^6.3.1",
     "@nextui-org/card": "^2.2.9",
     "@nextui-org/react": "^2.6.11",
@@ -50,7 +50,6 @@
     "react-router-dom": "^7.1.1",
     "react-slick": "^0.30.3",
     "react-toastify": "^11.0.2",
-    "semantic-ui-react": "^2.1.5",
     "slick-carousel": "^1.8.1",
     "tailwind-merge": "^2.6.0",
     "typescript": "^5.7.3"
